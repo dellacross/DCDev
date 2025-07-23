@@ -2,7 +2,7 @@ import { Braces, BriefcaseBusiness, Globe, GraduationCap, Lightbulb } from 'luci
 
 const Navbar = () => {
   return (
-        <nav className='flex items-center justify-center gap-x-5 h-16 border-y-2 border-[#222222] px-8'>
+        <nav className='flex items-center justify-center gap-x-5 h-[60px] border-y-2 border-[#222222] px-8 box-border'>
             <a href='#' className='flex text-white w-64 justify-center items-center gap-x-4 text-[#8D4BB9] underline underline-offset-4 decoration-2'>
                 <span><Lightbulb /></span>
                 <p>About Me</p>
@@ -19,7 +19,7 @@ const Navbar = () => {
                 <span><Globe /></span>
                 <p>Skills</p>
             </a>
-            <a href='#' className='flex text-white w-64 justify-center items-center gap-x-4 text-[#FFDF5E] underline underline-offset-4 decoration-2'>
+            <a href='/projects' className='flex text-white w-64 justify-center items-center gap-x-4 text-[#FFDF5E] underline underline-offset-4 decoration-2'>
                 <span><Braces /></span>
                 <p>Projects</p>
             </a>
