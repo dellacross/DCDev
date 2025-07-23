@@ -1,0 +1,128 @@
+[
+  {
+    "id":"1",
+    "name": "Personal Portfolio Website",
+    "description": "A responsive personal portfolio site to showcase projects, skills, and contact information.",
+    "skills": [
+      { "name": "HTML", "color": "#E44D26" },
+      { "name": "CSS", "color": "#1572B6" },
+      { "name": "JavaScript", "color": "#F7DF1E" },
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "Netlify", "color": "#00C7B7" }
+    ]
+  },
+  {
+    "id":"2",
+    "name": "E-commerce Platform",
+    "description": "A full-stack e-commerce application with shopping cart, user authentication, and payment integration.",
+    "skills": [
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "Node.js", "color": "#339933" },
+      { "name": "Express", "color": "#000000" },
+      { "name": "MongoDB", "color": "#47A248" },
+      { "name": "Stripe", "color": "#635BFF" },
+      { "name": "JWT", "color": "#000000" },
+      { "name": "Tailwind CSS", "color": "#38BDF8" }
+    ]
+  },
+  {
+    "id":"3",
+    "name": "Task Management API",
+    "description": "A RESTful API for managing tasks with CRUD operations and user authentication.",
+    "skills": [
+      { "name": "Node.js", "color": "#339933" },
+      { "name": "Express", "color": "#000000" },
+      { "name": "MongoDB", "color": "#47A248" },
+      { "name": "JWT", "color": "#000000" },
+      { "name": "Postman", "color": "#FF6C37" },
+      { "name": "Docker", "color": "#2496ED" }
+    ]
+  },
+  {
+    "id":"4",
+    "name": "Real-time Chat App",
+    "description": "A web-based chat application with real-time messaging and user presence indicators.",
+    "skills": [
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "Socket.io", "color": "#010101" },
+      { "name": "Node.js", "color": "#339933" },
+      { "name": "Express", "color": "#000000" },
+      { "name": "CSS", "color": "#1572B6" },
+      { "name": "Firebase", "color": "#FFCA28" }
+    ]
+  },
+  {
+    "id":"5",
+    "name": "Blog Platform",
+    "description": "A CMS-style blog platform with user roles, post editor, and commenting system.",
+    "skills": [
+      { "name": "Django", "color": "#092E20" },
+      { "name": "Python", "color": "#3776AB" },
+      { "name": "SQLite", "color": "#003B57" },
+      { "name": "Bootstrap", "color": "#7952B3" },
+      { "name": "CKEditor", "color": "#2F9BE4" }
+    ]
+  },
+  {
+    "id":"6",
+    "name": "Weather Dashboard",
+    "description": "A weather forecasting web app using public APIs and dynamic UI updates.",
+    "skills": [
+      { "name": "JavaScript", "color": "#F7DF1E" },
+      { "name": "HTML", "color": "#E44D26" },
+      { "name": "CSS", "color": "#1572B6" },
+      { "name": "OpenWeatherMap API", "color": "#FFA500" },
+      { "name": "Chart.js", "color": "#FF6384" }
+    ]
+  },
+  {
+    "id":"7",
+    "name": "Mobile Expense Tracker",
+    "description": "A mobile app for tracking expenses and generating financial summaries.",
+    "skills": [
+      { "name": "Flutter", "color": "#02569B" },
+      { "name": "Dart", "color": "#0175C2" },
+      { "name": "SQLite", "color": "#003B57" },
+      { "name": "Firebase", "color": "#FFCA28" },
+      { "name": "Provider", "color": "#42A5F5" }
+    ]
+  },
+  {
+    "id":"8",
+    "name": "AI Image Classifier",
+    "description": "An image classification tool using a convolutional neural network model.",
+    "skills": [
+      { "name": "Python", "color": "#3776AB" },
+      { "name": "TensorFlow", "color": "#FF6F00" },
+      { "name": "Keras", "color": "#D00000" },
+      { "name": "NumPy", "color": "#013243" },
+      { "name": "Matplotlib", "color": "#11557C" }
+    ]
+  },
+  {
+    "id":"9",
+    "name": "Stock Market Analyzer",
+    "description": "A data analysis tool for visualizing and forecasting stock trends.",
+    "skills": [
+      { "name": "Python", "color": "#3776AB" },
+      { "name": "Pandas", "color": "#150458" },
+      { "name": "Matplotlib", "color": "#11557C" },
+      { "name": "scikit-learn", "color": "#F7931E" },
+      { "name": "Plotly", "color": "#3F4F75" },
+      { "name": "Yahoo Finance API", "color": "#6001D2" }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Online Code Editor",
+    "description": "A browser-based code editor with syntax highlighting and live preview.",
+    "skills": [
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "Monaco Editor", "color": "#1E1E1E" },
+      { "name": "TypeScript", "color": "#3178C6" },
+      { "name": "Webpack", "color": "#8DD6F9" },
+      { "name": "Babel", "color": "#F9DC3E" },
+      { "name": "Vite", "color": "#646CFF" }
+    ]
+  }
+]
