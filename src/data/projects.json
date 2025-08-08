@@ -1,128 +1,116 @@
 [
   {
     "id":"1",
-    "name": "Personal Portfolio Website",
-    "description": "A responsive personal portfolio site to showcase projects, skills, and contact information.",
+    "name": "Área Restrita",
+    "description": "Desenvolvimento front-end do sistema interno da empresa Cotemig - Colégio e Faculdade para alunos, ex-alunos, responsáveis, professores e funcionários.",
     "skills": [
       { "name": "HTML", "color": "#E44D26" },
       { "name": "CSS", "color": "#1572B6" },
       { "name": "JavaScript", "color": "#F7DF1E" },
       { "name": "React", "color": "#61DAFB" },
-      { "name": "Netlify", "color": "#00C7B7" }
+      { "name": "RESTful API", "color": "#A2E0AD" },
+      { "name": "Axios", "color": "#8560E5" }
     ]
   },
   {
     "id":"2",
-    "name": "E-commerce Platform",
-    "description": "A full-stack e-commerce application with shopping cart, user authentication, and payment integration.",
+    "name": "Gerenciador de cobranças",
+    "description": "Permite geração e análise em tempo real do estado das cobranças.",
     "skills": [
+      { "name": "HTML", "color": "#E44D26" },
+      { "name": "CSS", "color": "#1572B6" },
+      { "name": "TypeScript", "color": "#3178C6" },
       { "name": "React", "color": "#61DAFB" },
-      { "name": "Node.js", "color": "#339933" },
-      { "name": "Express", "color": "#000000" },
-      { "name": "MongoDB", "color": "#47A248" },
-      { "name": "Stripe", "color": "#635BFF" },
-      { "name": "JWT", "color": "#000000" },
-      { "name": "Tailwind CSS", "color": "#38BDF8" }
+      { "name": "RESTful API", "color": "#A2E0AD" },
+      { "name": "Axios", "color": "#8560E5" }
     ]
   },
   {
     "id":"3",
-    "name": "Task Management API",
-    "description": "A RESTful API for managing tasks with CRUD operations and user authentication.",
+    "name": "Deposit tracker",
+    "description": "Tracker de depósitos para criação e gerenciamento de desafio de depósitos.",
     "skills": [
       { "name": "Node.js", "color": "#339933" },
       { "name": "Express", "color": "#000000" },
-      { "name": "MongoDB", "color": "#47A248" },
       { "name": "JWT", "color": "#000000" },
       { "name": "Postman", "color": "#FF6C37" },
-      { "name": "Docker", "color": "#2496ED" }
+      { "name": "HTML", "color": "#E44D26" },
+      { "name": "CSS", "color": "#1572B6" },
+      { "name": "TypeScript", "color": "#3178C6" },
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "RESTful API", "color": "#A2E0AD" },
+      { "name": "Axios", "color": "#8560E5" },
+      { "name": "PostgreSQL", "color": "#326690" },
+      { "name": "Prisma", "color": "#5A67D8" }
     ]
   },
   {
     "id":"4",
-    "name": "Real-time Chat App",
-    "description": "A web-based chat application with real-time messaging and user presence indicators.",
+    "name": "Conta Certa",
+    "description": "Sistema de gerenciamento de gastos.",
     "skills": [
-      { "name": "React", "color": "#61DAFB" },
-      { "name": "Socket.io", "color": "#010101" },
       { "name": "Node.js", "color": "#339933" },
       { "name": "Express", "color": "#000000" },
+      { "name": "JWT", "color": "#000000" },
+      { "name": "Postman", "color": "#FF6C37" },
+      { "name": "HTML", "color": "#E44D26" },
       { "name": "CSS", "color": "#1572B6" },
-      { "name": "Firebase", "color": "#FFCA28" }
+      { "name": "TypeScript", "color": "#3178C6" },
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "RESTful API", "color": "#A2E0AD" },
+      { "name": "Axios", "color": "#8560E5" },
+      { "name": "PostgreSQL", "color": "#326690" },
+      { "name": "Prisma", "color": "#5A67D8" }
     ]
   },
   {
     "id":"5",
-    "name": "Blog Platform",
-    "description": "A CMS-style blog platform with user roles, post editor, and commenting system.",
+    "name": "Personal Portfolio",
+    "description": "Portfólio pessoal.",
     "skills": [
-      { "name": "Django", "color": "#092E20" },
-      { "name": "Python", "color": "#3776AB" },
-      { "name": "SQLite", "color": "#003B57" },
-      { "name": "Bootstrap", "color": "#7952B3" },
-      { "name": "CKEditor", "color": "#2F9BE4" }
+      { "name": "HTML", "color": "#E44D26" },
+      { "name": "CSS", "color": "#1572B6" },
+      { "name": "TypeScript", "color": "#3178C6" },
+      { "name": "React", "color": "#61DAFB" },
+      { "name": "RESTful API", "color": "#A2E0AD" },
+      { "name": "Tailwindcss", "color": "#00BCFF" }
     ]
   },
   {
     "id":"6",
-    "name": "Weather Dashboard",
-    "description": "A weather forecasting web app using public APIs and dynamic UI updates.",
+    "name": "Sujeito pizza",
+    "description": "Backend de um sistema de gerenciamento de pedidos de um restaurante fictício.",
     "skills": [
-      { "name": "JavaScript", "color": "#F7DF1E" },
-      { "name": "HTML", "color": "#E44D26" },
-      { "name": "CSS", "color": "#1572B6" },
-      { "name": "OpenWeatherMap API", "color": "#FFA500" },
-      { "name": "Chart.js", "color": "#FF6384" }
+      { "name": "TypeScript", "color": "#3178C6" },
+      { "name": "PostgreSQL", "color": "#326690" },
+      { "name": "Prisma", "color": "#5A67D8" },
+      { "name": "Node.js", "color": "#339933" },
+      { "name": "Express", "color": "#000000" },
+      { "name": "JWT", "color": "#000000" }
     ]
   },
   {
     "id":"7",
-    "name": "Mobile Expense Tracker",
-    "description": "A mobile app for tracking expenses and generating financial summaries.",
+    "name": "Rede de dados climáticos",
+    "description": "Sistema de gerenciamento de dados de uma rede (cliente-servidor - TCP/IP) de dados climáticos de salas de aula de uma universidade fictícia.",
     "skills": [
-      { "name": "Flutter", "color": "#02569B" },
-      { "name": "Dart", "color": "#0175C2" },
-      { "name": "SQLite", "color": "#003B57" },
-      { "name": "Firebase", "color": "#FFCA28" },
-      { "name": "Provider", "color": "#42A5F5" }
+      { "name": "C", "color": "#3948AD" }
     ]
   },
   {
     "id":"8",
-    "name": "AI Image Classifier",
-    "description": "An image classification tool using a convolutional neural network model.",
+    "name": "Rede de sistema elétrico",
+    "description": "Sistema de gerenciamento de dados de uma rede (cliente-servidor - TCP/IP) de um sistema elétrico de uma universidade fictícia.",
     "skills": [
-      { "name": "Python", "color": "#3776AB" },
-      { "name": "TensorFlow", "color": "#FF6F00" },
-      { "name": "Keras", "color": "#D00000" },
-      { "name": "NumPy", "color": "#013243" },
-      { "name": "Matplotlib", "color": "#11557C" }
+      { "name": "C", "color": "#3948AD" }
     ]
   },
   {
     "id":"9",
-    "name": "Stock Market Analyzer",
-    "description": "A data analysis tool for visualizing and forecasting stock trends.",
+    "name": "Gerenciamento de jogos de loteria",
+    "description": "Permite criação, gerenciamento e conferência de jogos de loteria.",
     "skills": [
-      { "name": "Python", "color": "#3776AB" },
-      { "name": "Pandas", "color": "#150458" },
-      { "name": "Matplotlib", "color": "#11557C" },
-      { "name": "scikit-learn", "color": "#F7931E" },
-      { "name": "Plotly", "color": "#3F4F75" },
-      { "name": "Yahoo Finance API", "color": "#6001D2" }
-    ]
-  },
-  {
-    "id": "10",
-    "name": "Online Code Editor",
-    "description": "A browser-based code editor with syntax highlighting and live preview.",
-    "skills": [
-      { "name": "React", "color": "#61DAFB" },
-      { "name": "Monaco Editor", "color": "#1E1E1E" },
-      { "name": "TypeScript", "color": "#3178C6" },
-      { "name": "Webpack", "color": "#8DD6F9" },
-      { "name": "Babel", "color": "#F9DC3E" },
-      { "name": "Vite", "color": "#646CFF" }
+      { "name": "Python", "color": "#34719E" }
     ]
   }
 ]
