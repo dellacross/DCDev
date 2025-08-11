@@ -14,12 +14,12 @@ const Project = () => {
   } = useContext(ProjectContext)
 
   return (
-    <article className='flex h-full p-2 flex-col gap-y-2 overflow-y-auto text-white'>
+    <div className='flex h-full p-2 flex-col gap-y-2 overflow-y-hidden text-white'>
       { tab === ABOUTTAB && <About /> }
       { tab === TECHNOLOGIESTAB && <Technologies /> }
       { tab === UPDATESTAB && <Updates /> }
       { tab === MEMBERSTAB && <Members /> }
-    </article>
+    </div>
   )
 }
 

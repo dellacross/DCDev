@@ -1,11 +1,11 @@
-import { useMemo, useState, createContext } from 'react'
+import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB, UPDATESTAB } from '../constants/Tab.constant'
+import { useMemo, useState, createContext, useEffect } from 'react'
 import type { ProjectType } from '../types/Project.type'
 import { TabType } from '../types/Tab.type'
 import { Code } from 'lucide-react'
 import Container from '../layout/Container'
 import projectsData from '../data/projects.json'
 import Project from '../components/Projects/Project'
-import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB, UPDATESTAB } from '../constants/Tab.constant'
 
 type ProjectContextType = {
     selectedProject: any; // Replace 'any' with the actual type if known
@@ -27,6 +27,10 @@ const Projects = () => {
 
     const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null)
     const [tab, setTab] = useState<TabType>(ABOUTTAB)
+
+    useEffect(() => {
+        if (projects.length > 0) setSelectedProject(projects[0])
+    }, [projects])
 
     return (
         <Container>
