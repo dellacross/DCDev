@@ -10,7 +10,7 @@ const Career = () => {
         <Container>
             <div className='h-full flex gap-x-[50px]'>
                 <aside className='h-full w-[300px] flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
-                    <p className='text-white mx-[10px] flex bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Experiências</p>
+                    <p className='text-white mx-[10px] flex bg-[#262626] w-max px-4 py-[2px] border-b border-[#086099] border-solid text-[#086099]'>Experiências Profissionais</p>
                     <div className='flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2'>
                         <Experience />
                         <Experience />
