@@ -13,21 +13,22 @@ const Home = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const page = localStorage.getItem('__pg_nm')
 
-    if(!page) {
-      const pageData = {
-        name: 'Sobre mim',
-        endpoint: '/about',
-        color: '#46AD62'
-      }
-      localStorage.setItem('__pg_nm', JSON.stringify(pageData))
-      SetTabTitle('Sobre mim')
-      navigate('/about')
+    if(page) {
+      const pageData = JSON.parse(page)
+      SetTabTitle(pageData.name)
+      navigate(pageData.endpoint)
       return
     }
 
-    const pageData = JSON.parse(page)
+    const AboutPageData = {
+      name: 'Sobre mim',
+      endpoint: '/about',
+      color: '#46AD62'
+    }
 
-    navigate(pageData.endpoint)
+    localStorage.setItem('__pg_nm', JSON.stringify(AboutPageData))
+    SetTabTitle('Sobre mim')
+    navigate('/about')
   }, [])
 
   return (

@@ -18,6 +18,7 @@ const Technologies = () => {
                         key={index}
                         name={tech.name}
                         color={tech.color}
+                        field={tech.field} 
                     />
                 ))
             }

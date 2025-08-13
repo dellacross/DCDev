@@ -2,14 +2,21 @@
   {
     "id":"1",
     "name": "Área Restrita",
-    "description": "Desenvolvimento front-end do sistema interno da empresa Cotemig - Colégio e Faculdade para alunos, ex-alunos, responsáveis, professores e funcionários.",
+    "description": "Desenvolvimento Front-end do sistema interno da empresa Cotemig - Colégio e Faculdade para alunos, ex-alunos, responsáveis, professores e funcionários.",
     "skills": [
-      { "name": "HTML", "color": "#E44D26" },
-      { "name": "CSS", "color": "#1572B6" },
-      { "name": "JavaScript", "color": "#F7DF1E" },
-      { "name": "React", "color": "#61DAFB" },
-      { "name": "RESTful API", "color": "#A2E0AD" },
-      { "name": "Axios", "color": "#8560E5" }
+      { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
+      { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
+      { "name": "JavaScript", "color": "#F7DF1E", "field": "Front-end" },
+      { "name": "React", "color": "#61DAFB", "field": "Front-end" },
+      { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
+      { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
+      { "name": "PHP", "color": "#777BB3", "field": "Back-end" },
+      { "name": "MySQL", "color": "#4479A1", "field": "Back-end" },
+      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Front-end dev"] },
+      { "id": "2", "name": "Virgílio Borges", "email": "virgilio@example.com", "roles": ["Back-end dev"] }
     ]
   },
   {
@@ -17,12 +24,21 @@
     "name": "Gerenciador de cobranças",
     "description": "Permite geração e análise em tempo real do estado das cobranças.",
     "skills": [
-      { "name": "HTML", "color": "#E44D26" },
-      { "name": "CSS", "color": "#1572B6" },
-      { "name": "TypeScript", "color": "#3178C6" },
-      { "name": "React", "color": "#61DAFB" },
-      { "name": "RESTful API", "color": "#A2E0AD" },
-      { "name": "Axios", "color": "#8560E5" }
+      { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
+      { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
+      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end + Back-end" },
+      { "name": "React", "color": "#61DAFB", "field": "Front-end" },
+      { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
+      { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
+      { "name": "Node.js", "color": "#339933", "field": "Back-end" },
+      { "name": "Express", "color": "#000000", "field": "Back-end" },
+      { "name": "JWT", "color": "#000000", "field": "Back-end" },
+      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ]
   },
   {
@@ -30,18 +46,21 @@
     "name": "Deposit tracker",
     "description": "Tracker de depósitos para criação e gerenciamento de desafio de depósitos.",
     "skills": [
-      { "name": "Node.js", "color": "#339933" },
-      { "name": "Express", "color": "#000000" },
-      { "name": "JWT", "color": "#000000" },
-      { "name": "Postman", "color": "#FF6C37" },
-      { "name": "HTML", "color": "#E44D26" },
-      { "name": "CSS", "color": "#1572B6" },
-      { "name": "TypeScript", "color": "#3178C6" },
-      { "name": "React", "color": "#61DAFB" },
-      { "name": "RESTful API", "color": "#A2E0AD" },
-      { "name": "Axios", "color": "#8560E5" },
-      { "name": "PostgreSQL", "color": "#326690" },
-      { "name": "Prisma", "color": "#5A67D8" }
+      { "name": "Node.js", "color": "#339933", "field": "Back-end" },
+      { "name": "Express", "color": "#000000", "field": "Back-end" },
+      { "name": "JWT", "color": "#000000", "field": "Back-end" },
+      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" },
+      { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
+      { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
+      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end + Back-end" },
+      { "name": "React", "color": "#61DAFB", "field": "Front-end" },
+      { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
+      { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ]
   },
   {
@@ -49,18 +68,21 @@
     "name": "Conta Certa",
     "description": "Sistema de gerenciamento de gastos.",
     "skills": [
-      { "name": "Node.js", "color": "#339933" },
-      { "name": "Express", "color": "#000000" },
-      { "name": "JWT", "color": "#000000" },
-      { "name": "Postman", "color": "#FF6C37" },
-      { "name": "HTML", "color": "#E44D26" },
-      { "name": "CSS", "color": "#1572B6" },
-      { "name": "TypeScript", "color": "#3178C6" },
-      { "name": "React", "color": "#61DAFB" },
-      { "name": "RESTful API", "color": "#A2E0AD" },
-      { "name": "Axios", "color": "#8560E5" },
-      { "name": "PostgreSQL", "color": "#326690" },
-      { "name": "Prisma", "color": "#5A67D8" }
+      { "name": "Node.js", "color": "#339933", "field": "Back-end" },
+      { "name": "Express", "color": "#000000", "field": "Back-end" },
+      { "name": "JWT", "color": "#000000", "field": "Back-end" },
+      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" },
+      { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
+      { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
+      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end + Back-end" },
+      { "name": "React", "color": "#61DAFB", "field": "Front-end" },
+      { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
+      { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ]
   },
   {
@@ -68,12 +90,15 @@
     "name": "Personal Portfolio",
     "description": "Portfólio pessoal.",
     "skills": [
-      { "name": "HTML", "color": "#E44D26" },
-      { "name": "CSS", "color": "#1572B6" },
-      { "name": "TypeScript", "color": "#3178C6" },
-      { "name": "React", "color": "#61DAFB" },
-      { "name": "RESTful API", "color": "#A2E0AD" },
-      { "name": "Tailwindcss", "color": "#00BCFF" }
+      { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
+      { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
+      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end" },
+      { "name": "React", "color": "#61DAFB", "field": "Front-end" },
+      { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
+      { "name": "Tailwindcss", "color": "#00BCFF", "field": "Front-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ]
   },
   {
@@ -81,12 +106,15 @@
     "name": "Sujeito pizza",
     "description": "Backend de um sistema de gerenciamento de pedidos de um restaurante fictício.",
     "skills": [
-      { "name": "TypeScript", "color": "#3178C6" },
-      { "name": "PostgreSQL", "color": "#326690" },
-      { "name": "Prisma", "color": "#5A67D8" },
-      { "name": "Node.js", "color": "#339933" },
-      { "name": "Express", "color": "#000000" },
-      { "name": "JWT", "color": "#000000" }
+      { "name": "TypeScript", "color": "#3178C6", "field": "Back-end" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" },
+      { "name": "Node.js", "color": "#339933", "field": "Back-end" },
+      { "name": "Express", "color": "#000000", "field": "Back-end" },
+      { "name": "JWT", "color": "#000000", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end dev"] }
     ]
   },
   {
@@ -94,7 +122,10 @@
     "name": "Rede de dados climáticos",
     "description": "Sistema de gerenciamento de dados de uma rede (cliente-servidor - TCP/IP) de dados climáticos de salas de aula de uma universidade fictícia.",
     "skills": [
-      { "name": "C", "color": "#3948AD" }
+      { "name": "C", "color": "#3948AD", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end"] }
     ]
   },
   {
@@ -102,7 +133,10 @@
     "name": "Rede de sistema elétrico",
     "description": "Sistema de gerenciamento de dados de uma rede (cliente-servidor - TCP/IP) de um sistema elétrico de uma universidade fictícia.",
     "skills": [
-      { "name": "C", "color": "#3948AD" }
+      { "name": "C", "color": "#3948AD", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end"] }
     ]
   },
   {
@@ -110,7 +144,10 @@
     "name": "Gerenciamento de jogos de loteria",
     "description": "Permite criação, gerenciamento e conferência de jogos de loteria.",
     "skills": [
-      { "name": "Python", "color": "#34719E" }
+      { "name": "Python", "color": "#34719E", "field": "Back-end" }
+    ],
+    "members": [
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end"] }
     ]
   }
 ]
