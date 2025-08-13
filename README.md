@@ -5,7 +5,6 @@
 ![React](https://img.shields.io/badge/React-19.1.0-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6?logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4.14-38B2AC?logo=tailwindcss)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 Portfólio pessoal interativo desenvolvido com React e TypeScript, apresentando projetos, experiências profissionais e educacionais de forma moderna e responsiva.
 
@@ -164,42 +163,6 @@ DCDev/
 └── README.md
 ```
 
-## 📸 Screenshots
-
-*Adicione aqui screenshots das principais seções do seu portfólio*
-
-## 🤝 Como Contribuir
-
-Contribuições são sempre bem-vindas! Se você tem ideias para melhorar este projeto, siga estes passos:
-
-### Para contribuir:
-
-1. **Fork o projeto**
-2. **Crie uma branch para sua feature**
-```bash
-git checkout -b feature/sua-nova-feature
-```
-
-3. **Faça commit das suas alterações**
-```bash
-git commit -m 'Adiciona nova feature incrível'
-```
-
-4. **Push para a branch**
-```bash
-git push origin feature/sua-nova-feature
-```
-
-5. **Abra um Pull Request**
-
-### Diretrizes de Contribuição
-
-- Mantenha o código limpo e bem documentado
-- Siga as convenções de nomenclatura TypeScript
-- Utilize Tailwind CSS para estilização
-- Adicione testes quando aplicável
-- Descreva claramente as mudanças no PR
-
 ### Reportando Bugs
 
 Encontrou um bug? Por favor, abra uma [issue](https://github.com/dellacross/DCDev/issues) incluindo:
@@ -207,10 +170,6 @@ Encontrou um bug? Por favor, abra uma [issue](https://github.com/dellacross/DCDe
 - Passos para reproduzir
 - Comportamento esperado vs. atual
 - Screenshots (se aplicável)
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 👨‍💻 Autor
 
