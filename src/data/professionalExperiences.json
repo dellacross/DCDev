@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "Desenvolvedor Frontend",
-        "company": "COTEMIG - Colégio e Faculdade",
+        "company": "COTEMIG",
         "location": "Presencial",
         "duration": "Março/2025 - Atual",
         "description": "Developing and maintaining web applications."
@@ -10,7 +10,7 @@
     {
         "id": "2",
         "title": "Estagiário em desenvolvimento Frontend",
-        "company": "COTEMIG - Colégio e Faculdade",
+        "company": "COTEMIG",
         "location": "Presencial",
         "duration": "Março/2023 - Fevereiro/2025",
         "description": "Developing and maintaining web applications."

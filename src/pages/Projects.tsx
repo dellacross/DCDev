@@ -29,7 +29,7 @@ const Projects = () => {
     const [tab, setTab] = useState<TabType>(ABOUTTAB)
 
     useEffect(() => {
-        if (projects.length > 0) setSelectedProject(projects[0])
+        setSelectedProject(projects[0] || null)
     }, [projects])
 
     return (

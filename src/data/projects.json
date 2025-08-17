@@ -2,7 +2,7 @@
   {
     "id":"1",
     "name": "Área Restrita",
-    "description": "Desenvolvimento Front-end do sistema interno da empresa Cotemig - Colégio e Faculdade para alunos, ex-alunos, responsáveis, professores e funcionários.",
+    "description": "Desenvolvimento Front-end do sistema interno da empresa COTEMIG para alunos, ex-alunos, responsáveis, professores e funcionários.",
     "skills": [
       { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
       { "name": "CSS", "color": "#1572B6", "field": "Front-end" },

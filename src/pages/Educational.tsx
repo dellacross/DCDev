@@ -1,5 +1,5 @@
 import { EducationalExperienceType } from '../types/EducationalExperience.type'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Container from '../layout/Container'
 import Experience from '../components/Educational/Experience'
 import educationalData from '../data/educational.json'
@@ -7,6 +7,12 @@ import educationalData from '../data/educational.json'
 const Educational = () => {
 
   const EducationalExperiences: EducationalExperienceType[] = useMemo(() => educationalData, [])
+
+  const [selectedExperience, setSelectedExperience] = useState<EducationalExperienceType | null>(null)
+
+  useEffect(() => {
+    setSelectedExperience(EducationalExperiences[0] || null)
+  }, [EducationalExperiences])
 
   return (
     <Container>
