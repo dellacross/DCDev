@@ -23,7 +23,7 @@ const Home = ({ children }: { children: ReactNode }) => {
     const AboutPageData = {
       name: 'Sobre mim',
       endpoint: '/about',
-      color: '#46AD62'
+      color: '#8D4BB9'
     }
 
     localStorage.setItem('__pg_nm', JSON.stringify(AboutPageData))

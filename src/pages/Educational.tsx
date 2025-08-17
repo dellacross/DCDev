@@ -1,6 +1,7 @@
 import { EducationalExperienceType } from '../types/EducationalExperience.type'
 import { useMemo } from 'react'
 import Container from '../layout/Container'
+import Experience from '../components/Educational/Experience'
 import educationalData from '../data/educational.json'
 
 const Educational = () => {
@@ -15,14 +16,15 @@ const Educational = () => {
           <div className='flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2'>
             {
               EducationalExperiences?.map(experience => (
-                <div
+                <Experience 
                   key={experience.id}
-                  className='flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer hover:bg-[#333333] hover:border-b border-[#C91634] border-solid'
-                >
-                  <p className=''>{experience.name}</p>
-                  <p className='text-xs'>{experience.institution}</p>
-                  { experience.startDate && <p className='text-xs'>{`${experience.startDate} - ${experience.endDate ? experience.endDate : 'atualmente'}`}</p> }
-              </div>
+                  id={experience.id}
+                  name={experience.name}
+                  institution={experience.institution}
+                  duration={experience.duration}
+                  acronym={experience.acronym}
+                  description={experience.description}
+                />
               ))
             }
           </div>

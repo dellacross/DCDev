@@ -4,10 +4,7 @@ export type EducationalExperienceType = {
     description: string;
     institution: string;
     acronym: string;
-    startDate: string | null;
-    endDate: string | null;
-    completed: boolean;
-    unfinished: boolean;
+    duration: string | null;
     link?: string | null;
     certificate?: string | null;
 }
