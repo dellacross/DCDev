@@ -22,7 +22,7 @@ const About = () => {
                         <img 
                             src={Photo}
                             alt='photo' 
-                            className='w-[110px] rounded-lg border-[#8D4BB9]'
+                            className='size-32 rounded-lg border-[#8D4BB9]'
                         />
                         <div className='flex flex-col text-white py-2 gap-y-1'>
                             <p className='font-semibold'>{about.profession}</p>

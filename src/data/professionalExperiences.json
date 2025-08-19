@@ -2,17 +2,17 @@
     {
         "id": "1",
         "title": "Desenvolvedor Frontend",
-        "company": "COTEMIG",
+        "company": "COTEMIG - Colégio e Faculdade",
         "location": "Presencial",
         "duration": "Março/2025 - Atual",
-        "description": "Developing and maintaining web applications."
+        "description": "Atuei no desenvolvimento e manutenção de um sistema web completo para uma instituição de ensino, voltado a diferentes perfis de usuários, incluindo alunos, ex-alunos, professores, responsáveis e equipe administrativa. Nesse contexto, fui responsável pela implementação de funcionalidades essenciais, como o lançamento de notas e frequência por professores, exibição de boletins virtuais, histórico escolar, grade curricular e disponibilização de interfaces para pagamento de mensalidades por alunos e responsáveis financeiros.\n\nTambém desenvolvi recursos voltados à gestão acadêmica e administrativa, como rematrícula online, cadastro para provas, formulação de planos de estudos, geração de declarações escolares, visualização de agenda e um portal de notícias e blog institucional, com conteúdo segmentado para o público interno.\n\nAlém disso, contribuí na integração do sistema com plataformas externas, incluindo a EDUQO e o Google Classroom, garantindo uma experiência fluida entre os diferentes ambientes utilizados pela instituição. O desenvolvimento foi conduzido com foco em boas práticas de código, priorizando modularidade, reutilização de componentes e escalabilidade, de forma a facilitar testes e manutenções futuras.\n\nMinha atuação também envolveu a integração eficiente entre interfaces front-end e serviços de back-end por meio de APIs RESTful, em um ambiente colaborativo com equipes multifuncionais. Para versionamento e fluxo de trabalho em equipe, utilizei Git e GitHub, assegurando organização e rastreabilidade no desenvolvimento contínuo do projeto."
     },
     {
         "id": "2",
         "title": "Estagiário em desenvolvimento Frontend",
-        "company": "COTEMIG",
-        "location": "Presencial",
+        "company": "COTEMIG - Colégio e Faculdade",
+        "location": "Híbrido",
         "duration": "Março/2023 - Fevereiro/2025",
-        "description": "Developing and maintaining web applications."
+        "description": "Durante o estágio, atuei na criação de interfaces dinâmicas e responsivas, utilizando ReactJS, JavaScript, HTML e CSS, com foco em oferecer uma boa experiência ao usuário. Contribuí no desenvolvimento e manutenção de aplicações web, auxiliando na implementação de novas funcionalidades e na correção de bugs em colaboração direta com desenvolvedores sêniores.\n\nParticipei ativamente de projetos em equipe, utilizando Git para versionamento de código, garantindo organização e rastreabilidade no fluxo de trabalho. Além disso, adquiri experiência prática na integração de front-end com APIs REST, fortalecendo minha compreensão sobre comunicação entre sistemas e arquitetura web."
     }
 ]

@@ -14,7 +14,6 @@ const Project = () => {
     <div className='flex h-full p-2 flex-col gap-y-2 overflow-y-hidden text-white'>
       { tab === ABOUTTAB && <About /> }
       { tab === TECHNOLOGIESTAB && <Technologies /> }
-      { tab === UPDATESTAB && <Updates /> }
       { tab === MEMBERSTAB && <Members /> }
     </div>
   )
