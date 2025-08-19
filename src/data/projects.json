@@ -2,152 +2,163 @@
   {
     "id":"1",
     "name": "Área Restrita",
-    "description": "Desenvolvimento Front-end do sistema interno da empresa COTEMIG para alunos, ex-alunos, responsáveis, professores e funcionários.",
+    "description": "Área Restrita - Sistema Web de Gestão Acadêmica\n\nO projeto Área Restrita é um sistema web desenvolvido para facilitar o acesso e a gestão de informações acadêmicas por alunos, professores e colaboradores de uma instituição de ensino. Construído com React, o sistema oferece uma interface moderna, responsiva e intuitiva, integrando diversos módulos essenciais para o dia a dia escolar.\n\nPrincipais funcionalidades:\n\n• Dashboard personalizado: Visualização rápida de informações relevantes, como avisos, agenda, boletim, horários e documentos.\n\n• Gestão de arquivos: Download e visualização de documentos acadêmicos, declarações, boletos e arquivos diversos.\n\n• Controle de atividades: Acompanhamento de atividades complementares, estágio, rematrícula, plano de aula e ocorrências.\n\n• Integração com serviços externos: Login via Google/Microsoft, integração com APIs institucionais e Google Analytics.\n\n• Notificações e alertas: Sistema de notificações em tempo real, mensagens de atenção e animações de feedback.\n\n• Acessibilidade e usabilidade: Navegação adaptada para dispositivos móveis, temas claro/escuro e componentes reutilizáveis.\n\nO sistema foi desenvolvido com foco em segurança, escalabilidade e experiência do usuário, utilizando boas práticas de arquitetura front-end, gerenciamento de contexto global, hooks customizados e integração com serviços RESTful.",
     "skills": [
+      { "name": "JavaScript", "color": "#F7DF1E", "field": "Linguagem" },
       { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
       { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
-      { "name": "JavaScript", "color": "#F7DF1E", "field": "Front-end" },
       { "name": "React", "color": "#61DAFB", "field": "Front-end" },
       { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
       { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
-      { "name": "PHP", "color": "#777BB3", "field": "Back-end" },
-      { "name": "MySQL", "color": "#4479A1", "field": "Back-end" },
-      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" }
+      { "name": "Postman", "color": "#FF6C37", "field": "Ambiente de testes" }
     ],
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Front-end dev"] },
       { "id": "2", "name": "Virgílio Borges", "email": "virgilio@example.com", "roles": ["Back-end dev"] }
-    ]
+    ],
+    "link": null
   },
   {
     "id":"2",
     "name": "Gerenciador de cobranças",
     "description": "Permite geração e análise em tempo real do estado das cobranças.",
     "skills": [
+      { "name": "TypeScript", "color": "#3178C6", "field": "Linguagem" },
       { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
       { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
-      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end + Back-end" },
       { "name": "React", "color": "#61DAFB", "field": "Front-end" },
       { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
       { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
       { "name": "Node.js", "color": "#339933", "field": "Back-end" },
       { "name": "Express", "color": "#000000", "field": "Back-end" },
-      { "name": "JWT", "color": "#000000", "field": "Back-end" },
-      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" },
-      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "JWT", "color": "#000000", "field": "Autenticação" },
+      { "name": "Postman", "color": "#FF6C37", "field": "Ambiente de testes" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Banco de dados" },
       { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" }
     ],
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
-    ]
+    ],
+    "link": null
   },
   {
     "id":"3",
     "name": "Deposit tracker",
     "description": "Tracker de depósitos para criação e gerenciamento de desafio de depósitos.",
     "skills": [
+      { "name": "TypeScript", "color": "#3178C6", "field": "Linguagem" },
       { "name": "Node.js", "color": "#339933", "field": "Back-end" },
       { "name": "Express", "color": "#000000", "field": "Back-end" },
-      { "name": "JWT", "color": "#000000", "field": "Back-end" },
-      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" },
+      { "name": "JWT", "color": "#000000", "field": "Autenticação" },
+      { "name": "Postman", "color": "#FF6C37", "field": "Ambiente de testes" },
       { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
       { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
-      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end + Back-end" },
       { "name": "React", "color": "#61DAFB", "field": "Front-end" },
       { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
       { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
-      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Banco de dados" },
       { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" }
     ],
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
-    ]
+    ],
+    "link": null
   },
   {
     "id":"4",
     "name": "Conta Certa",
     "description": "Sistema de gerenciamento de gastos.",
     "skills": [
+      { "name": "TypeScript", "color": "#3178C6", "field": "Linguagem" },
       { "name": "Node.js", "color": "#339933", "field": "Back-end" },
       { "name": "Express", "color": "#000000", "field": "Back-end" },
-      { "name": "JWT", "color": "#000000", "field": "Back-end" },
-      { "name": "Postman", "color": "#FF6C37", "field": "Back-end" },
+      { "name": "JWT", "color": "#000000", "field": "Autenticação" },
+      { "name": "Postman", "color": "#FF6C37", "field": "Ambiente de testes" },
       { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
       { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
-      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end + Back-end" },
       { "name": "React", "color": "#61DAFB", "field": "Front-end" },
       { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
       { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
-      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Banco de dados" },
       { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" }
     ],
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
-    ]
+    ],
+    "link": null
   },
   {
     "id":"5",
     "name": "Personal Portfolio",
-    "description": "Portfólio pessoal.",
+    "description": "DCDev é um portfólio interativo desenvolvido em React e TypeScript, com design moderno utilizando Tailwind CSS. O projeto apresenta de forma organizada informações sobre experiências profissionais, educacionais, habilidades, projetos realizados e curiosidades pessoais. Possui navegação intuitiva, componentes reutilizáveis e integração de dados via arquivos JSON, facilitando atualizações e personalização. Ideal para destacar sua trajetória, competências e projetos de maneira visualmente atraente e responsiva.",
     "skills": [
+      { "name": "TypeScript", "color": "#3178C6", "field": "Linguagem" },
       { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
       { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
-      { "name": "TypeScript", "color": "#3178C6", "field": "Front-end" },
       { "name": "React", "color": "#61DAFB", "field": "Front-end" },
       { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
       { "name": "Tailwindcss", "color": "#00BCFF", "field": "Front-end" }
     ],
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
-    ]
+    ],
+    "link": "https://github.com/dellacross/DCDev"
   },
   {
     "id":"6",
     "name": "Sujeito pizza",
     "description": "Backend de um sistema de gerenciamento de pedidos de um restaurante fictício.",
     "skills": [
-      { "name": "TypeScript", "color": "#3178C6", "field": "Back-end" },
-      { "name": "PostgreSQL", "color": "#326690", "field": "Back-end" },
+      { "name": "TypeScript", "color": "#3178C6", "field": "Linguagem" },
+      { "name": "PostgreSQL", "color": "#326690", "field": "Banco de dados" },
       { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" },
       { "name": "Node.js", "color": "#339933", "field": "Back-end" },
       { "name": "Express", "color": "#000000", "field": "Back-end" },
-      { "name": "JWT", "color": "#000000", "field": "Back-end" }
+      { "name": "JWT", "color": "#000000", "field": "Autenticação" }
     ],
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end dev"] }
-    ]
+    ],
+    "link": null
   },
   {
     "id":"7",
     "name": "Rede de dados climáticos",
     "description": "Sistema de gerenciamento de dados de uma rede (cliente-servidor - TCP/IP) de dados climáticos de salas de aula de uma universidade fictícia.",
     "skills": [
-      { "name": "C", "color": "#3948AD", "field": "Back-end" }
+      { "name": "C", "color": "#3948AD", "field": "Linguagem" }
     ],
     "members": [
-      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end"] }
-    ]
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
+    ],
+    "link": null
   },
   {
     "id":"8",
     "name": "Rede de sistema elétrico",
     "description": "Sistema de gerenciamento de dados de uma rede (cliente-servidor - TCP/IP) de um sistema elétrico de uma universidade fictícia.",
     "skills": [
-      { "name": "C", "color": "#3948AD", "field": "Back-end" }
+      { "name": "C", "color": "#3948AD", "field": "Linguagem" }
     ],
     "members": [
-      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end"] }
-    ]
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
+    ],
+    "link": null
   },
   {
     "id":"9",
     "name": "Gerenciamento de jogos de loteria",
-    "description": "Permite criação, gerenciamento e conferência de jogos de loteria.",
+    "description": "Este projeto tem como objetivo explorar a loteria Mega-Sena por meio de programação em Python. Nele, desenvolvi um notebook interativo que permite:\n\n• Gerar apostas aleatórias baseadas nas regras da Mega-Sena.\n\n• Realizar simulações de sorteios para avaliar a probabilidade de acertos.\n\n• Analisar estatísticas de frequência de números e possíveis padrões.\n\n• Automatizar cálculos de combinações e probabilidades.\n\nTecnologias utilizadas:\n\n• Python\n\n• Jupyter Notebook\n\nBibliotecas:\n\n• Pandas\n\n• NumPy\n\n• Matplotlib\n\nEsse projeto demonstra habilidades em programação, estatística aplicada e manipulação de dados, além de mostrar como aplicar conceitos matemáticos em situações reais.",
     "skills": [
-      { "name": "Python", "color": "#34719E", "field": "Back-end" }
+      { "name": "Python", "color": "#34719E", "field": "Linguagem" },
+      { "name": "Jupyter Notebook", "color": "#F37626", "field": "Ambiente de desenvolvimento" },
+      { "name": "Pandas", "color": "#150458", "field": "Ferramenta" },
+      { "name": "NumPy", "color": "#013243", "field": "Ferramenta" },
+      { "name": "Matplotlib", "color": "#003B5C", "field": "Ferramenta" }
     ],
     "members": [
-      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end"] }
-    ]
+      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
+    ],
+    "link": "https://colab.research.google.com/drive/1EhB1js637VId0vGQj5uq7czNnjj5Eyt_#scrollTo=J-t_zENLXCfn"
   }
 ]
