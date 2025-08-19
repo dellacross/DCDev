@@ -7,4 +7,6 @@ export type EducationalExperienceType = {
     duration: string | null;
     link?: string | null;
     certificate?: string | null;
+    completed: boolean;
+    unfinished: boolean;
 }
