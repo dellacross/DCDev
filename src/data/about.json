@@ -1,0 +1,47 @@
+{
+    "name": "Victor",
+    "fullname": "Victor Della Croce Maltez",
+    "profession": "Desenvolvedor Full Stack",
+    "birth": "02/03/2001",
+    "location": "Belo Horizonte/MG - Brasil",
+    "nationality": "Brasileiro",
+    "about": "Sou desenvolvedor full stack e Bacharel em Sistemas de Informação pela Universidade Federal de Minas Gerais (UFMG), formação na qual desenvolvi diversos projetos, em diferentes tecnologias, como JavaScript, TypeScript, Python, C/C++, ReactJS, entre outras. Durante 2 anos, atuei como estagiário em desenvolvimento web, período no qual pude aprimorar minhas habilidades na criação de interfaces dinâmicas e responsivas utilizando ReactJS, JavaScript, HTML e CSS. No momento, atuo como desenvolvedor front end júnior.",
+    "email": "victordelladev@gmail.com",
+    "socials": {
+        "instagram": "https://www.instagram.com/victordella/",
+        "linkedin": "https://www.linkedin.com/in/victor-della-croce-maltez-48711b187/",
+        "github": "https://github.com/dellacross"
+    },
+    "curiosities": [
+        {
+            "id": "1",
+            "field": "Games",
+            "description": "Gosto muito de jogos de computador, principalmente jogos de corrida e modo história",
+            "icon": "🎮"
+        },
+        {
+            "id": "2",
+            "field": "Esportes",
+            "description": "Sou torcedor do Santos Futebol Clube",
+            "icon": "⚽"
+        },
+        {
+            "id": "3",
+            "field": "Tecnologia",
+            "description": "Sou apaixonado pela programação",
+            "icon": "💻"
+        },
+        {
+            "id": "4",
+            "field": "História",
+            "description": "Gosto muito de filmes de contextos históricos e ficção científica",
+            "icon": "🎬"
+        },
+        {
+            "id": "5",
+            "field": "Colecionáveis",
+            "description": "Coleciono camisas de time de futebol e video games",
+            "icon": "🧩"
+        }
+    ]
+}

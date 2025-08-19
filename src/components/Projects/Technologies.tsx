@@ -1,14 +1,11 @@
 import { ProjectContext } from '../../pages/Projects'
 import { useContext } from 'react'
 import { SkillType } from '../../types/Skill.type'
-import Tech from './Tech'
+import Tech from '../Tech'
 
 const Technologies = () => {
 
-    const { 
-        selectedProject, 
-        tab 
-    } = useContext(ProjectContext)
+    const { selectedProject } = useContext(ProjectContext)
 
     return (
         <div className='grid grid-cols-5 gap-4 text-sm text-white'>

@@ -4,10 +4,7 @@ import Update from './Update'
 
 const Updates = () => {
 
-    const { 
-        selectedProject, 
-        tab 
-    } = useContext(ProjectContext)
+    const { selectedProject } = useContext(ProjectContext)
 
     return (
         <div className='h-full w-full p-4'>

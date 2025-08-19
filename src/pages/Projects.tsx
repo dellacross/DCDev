@@ -1,7 +1,7 @@
-import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB, UPDATESTAB } from '../constants/Tab.constant'
+import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB, UPDATESTAB } from '../constants/ProjectTab.constant'
 import { useMemo, useState, createContext, useEffect } from 'react'
 import type { ProjectType } from '../types/Project.type'
-import { TabType } from '../types/Tab.type'
+import { ProjectTabType } from '../types/ProjectTab.type'
 import { Code } from 'lucide-react'
 import Container from '../layout/Container'
 import projectsData from '../data/projects.json'
@@ -26,7 +26,7 @@ const Projects = () => {
     const projects: ProjectType[] = useMemo(() => projectsData, [])
 
     const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null)
-    const [tab, setTab] = useState<TabType>(ABOUTTAB)
+    const [tab, setTab] = useState<ProjectTabType>(ABOUTTAB)
 
     useEffect(() => {
         setSelectedProject(projects[0] || null)

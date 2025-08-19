@@ -3,10 +3,7 @@ import { useContext } from 'react'
 
 const About = () => {
 
-    const { 
-        selectedProject, 
-        tab 
-    } = useContext(ProjectContext)
+    const { selectedProject } = useContext(ProjectContext)
 
     return (
         <div className='flex flex-col gap-y-4 text-sm overflow-y-auto h-full'>

@@ -2,53 +2,83 @@ import { calculateAge } from '../utils/calculateAge'
 import { useMemo } from 'react'
 import Photo from '../assets/images/photo.png'
 import Container from '../layout/Container'
+import about from '../data/about.json'
+import Curiosity from '../components/About/Curiosity'
+import { Github, Instagram, Linkedin } from 'lucide-react'
 
 const About = () => {
 
     const age = useMemo(() => {
-        const birthDate = new Date(2001, 2, 2)
+        const [dia, mes, ano] = about.birth.split('/').map(Number);
+        const birthDate = new Date(ano, mes - 1, dia)
         return calculateAge(birthDate)
-    }, [])
+    }, [about])
 
     return (
         <Container>
             <div className='h-full flex gap-x-[50px]'>
-                <aside className='h-min w-[300px] flex flex-col p-4 bg-[#775390] rounded-lg'>
-                    <div className='flex justify-between mb-4 gap-x-4'>
+                <aside className='h-min w-[300px] flex flex-col'>
+                    <div className='flex justify-between gap-x-4 bg-[#775390] px-4 py-2 rounded-t-lg'>
                         <img 
                             src={Photo}
                             alt='photo' 
                             className='w-[110px] rounded-lg border-[#8D4BB9]'
                         />
                         <div className='flex flex-col text-white py-2 gap-y-1'>
-                            <p className='font-semibold'>Desenvolvedor Full Stack</p>
+                            <p className='font-semibold'>{about.profession}</p>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-y-1'>
-                        <p className='text-white'>Victor Della Croce Maltez</p>
+                    <div className='flex flex-col gap-y-1 bg-[#775390] rounded-b-lg px-4 py-2'>
+                        <p className='text-white'>{about.fullname}</p>
                         <p className='flex gap-x-2 px-1'>
                             <span className='bg-[#ffffff] text-[#8D4BB9] px-2 py-1 rounded-md text-sm'>{`${age} anos`}</span>
-                            <span className='bg-[#ffffff] text-[#8D4BB9] px-2 py-1 rounded-md text-sm'>Brasileiro</span>
+                            <span className='bg-[#ffffff] text-[#8D4BB9] px-2 py-1 rounded-md text-sm'>{about.nationality}</span>
                         </p>
+                    </div>
+                    <div className='flex justify-center p-4 gap-6 cursor-pointer'>
+                        <a 
+                            className='p-2 rounded-md bg-[#000000]'
+                            href={about.socials.github}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            {<Github color='#fff' />}
+                        </a>
+                        <a 
+                            className='p-2 rounded-md bg-[#0A66C2]'
+                            href={about.socials.linkedin}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            {<Linkedin color='#fff' />}
+                        </a>
+                        <a 
+                            className='p-2 rounded-md bg-[#dd4ec5]'
+                            href={about.socials.instagram}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            {<Instagram color='#fff' />}
+                        </a>
                     </div>
                 </aside>
-                <main className='flex-1 h-full flex w-full flex-col'>
-                    <div className='flex flex-col w-full h-[60%] gap-y-2 px-2'>
+                <main className='flex-1 h-full flex flex-col'>
+                    <div className='flex flex-col h-[60%] gap-y-2 px-2'>
                         <p className='text-white text-sm'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor magna, ullamcorper eu elementum id, aliquam a lectus. Cras sollicitudin tortor non erat consequat, et pharetra lorem aliquam. Phasellus imperdiet malesuada mi, non ornare urna viverra in. Sed ut iaculis est. Praesent non luctus est, et sodales risus. Suspendisse id facilisis mauris. Mauris gravida elit vel sapien eleifend, tincidunt euismod leo sagittis. Aliquam sollicitudin sapien nunc, non sodales dui suscipit ut. Cras suscipit nulla sed justo blandit, vitae tempor leo mollis. Proin ac lectus sed leo rhoncus imperdiet non non orci. Vivamus eu nulla ac lectus aliquam hendrerit ac sed lacus. Suspendisse pellentesque gravida turpis molestie mattis. Nullam id porttitor magna. Sed eget quam massa. Ut lectus metus, facilisis id volutpat at, consequat interdum tellus.
-                        </p>
-                        <p className='text-white text-sm'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor magna, ullamcorper eu elementum id, aliquam a lectus. Cras sollicitudin tortor non erat consequat, et pharetra lorem aliquam. Phasellus imperdiet malesuada mi, non ornare urna viverra in. Sed ut iaculis est. Praesent non luctus est, et sodales risus. Suspendisse id facilisis mauris. Mauris gravida elit vel sapien eleifend, tincidunt euismod leo sagittis. Aliquam sollicitudin sapien nunc, non sodales dui suscipit ut. Cras suscipit nulla sed justo blandit, vitae tempor leo mollis. Proin ac lectus sed leo rhoncus imperdiet non non orci. Vivamus eu nulla ac lectus aliquam hendrerit ac sed lacus. Suspendisse pellentesque gravida turpis molestie mattis. Nullam id porttitor magna. Sed eget quam massa. Ut lectus metus, facilisis id volutpat at, consequat interdum tellus.
+                            {about.about}
                         </p>
                     </div>
-                    <div className='flex flex-col w-full h-[40%]'>
-                        <header className='flex w-full h-[50px] bg-[#8D4BB930] text-[#8D4BB9] px-5 items-center text-lg'>
+                    <div className='flex flex-col h-[40%]'>
+                        <header className='flex min-h-[50px] bg-[#8D4BB930] text-[#8D4BB9] px-5 items-center text-lg'>
                             Curiosidades
                         </header>
-                        <div className='flex flex-col gap-y-2 p-2'>
-                            <p className='text-white text-sm'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor magna, ullamcorper eu elementum id, aliquam a lectus. Cras sollicitudin tortor non erat consequat, et pharetra lorem aliquam. Phasellus imperdiet malesuada mi, non ornare urna viverra in. Sed ut iaculis est. Praesent non luctus est, et sodales risus. Suspendisse id facilisis mauris. Mauris gravida elit vel sapien eleifend, tincidunt euismod leo sagittis. Aliquam sollicitudin sapien nunc, non sodales dui suscipit ut. Cras suscipit nulla sed justo blandit, vitae tempor leo mollis. Proin ac lectus sed leo rhoncus imperdiet non non orci. Vivamus eu nulla ac lectus aliquam hendrerit ac sed lacus. Suspendisse pellentesque gravida turpis molestie mattis. Nullam id porttitor magna. Sed eget quam massa. Ut lectus metus, facilisis id volutpat at, consequat interdum tellus.
-                            </p>
+                        <div className='grid grid-cols-5 gap-4 p-4'>
+                            {about.curiosities.map(curiosity => (
+                                <Curiosity 
+                                    key={curiosity.id} 
+                                    {...curiosity} 
+                                />
+                            ))}
                         </div>
                     </div>
                 </main>
