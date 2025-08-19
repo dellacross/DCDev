@@ -23,12 +23,12 @@
             {
                 "name": "JavaScript",
                 "color": "#F7DF1E",
-                "field": "Front-end"
+                "field": "Linguagem"
             },
             {
                 "name": "TypeScript",
                 "color": "#3178C6",
-                "field": "Front-end + Back-end"
+                "field": "Linguagem"
             },
             {
                 "name": "React",
@@ -58,7 +58,7 @@
             {
                 "name": "PostgreSQL",
                 "color": "#326690",
-                "field": "Back-end"
+                "field": "Banco de dados"
             },
             {
                 "name": "Prisma",
@@ -73,8 +73,8 @@
         "title": "Domine Web - 20 Cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais",
         "institution": "Udemy",
         "duration": "120 horas",
-        "description": "Domine Web - 20 Cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais",
-        "completed": false,
+        "description": "Durante o curso Desenvolvimento Web Completo, pude adquirir uma formação sólida em desenvolvimento web e mobile, partindo do zero até atingir um nível profissional. O treinamento incluiu mais de 117 horas de vídeo e a construção prática de 20 projetos reais, permitindo a integração de diversas tecnologias essenciais do mercado.\n\nAprendi a criar aplicações web completas, trabalhando tanto com frontend (HTML5, CSS3, Bootstrap 4, JavaScript moderno e jQuery) quanto com backend (PHP 7, PHP com PDO, MySQL, MVC e APIs). Também explorei desenvolvimento mobile utilizando IONIC, conectando aplicativos a sistemas web, e adquiri conhecimento em WordPress, desde instalação e configuração até personalização de temas e plugins.\n\nAlém das linguagens e frameworks, o curso me proporcionou experiência prática com boas práticas de programação, arquitetura de software, requisições AJAX, criação de dashboards, integração com bancos de dados e publicação de aplicações na internet. Ao final, fui capaz de desenvolver aplicações completas, responsivas e funcionais, aplicando todo o conhecimento adquirido em projetos reais.\n\nEste curso me preparou não apenas para criar meus próprios projetos, mas também para atuar profissionalmente como desenvolvedor web full stack, com capacidade de integrar múltiplas tecnologias de forma eficiente e segura.",
+        "completed": true,
         "link": "https://www.udemy.com/course/web-completo/learn/lecture/39602734?start=0#overview",
         "certificate": "https://www.udemy.com/certificate/UC-c0f8489a-620c-4687-873b-51d54226a028/",
         "skills": [
@@ -91,22 +91,22 @@
             {
                 "name": "JavaScript",
                 "color": "#F7DF1E",
-                "field": "Front-end"
+                "field": "Linguagem"
             },
             {
                 "name": "PHP",
                 "color": "#777BB3",
-                "field": "Back-end"
+                "field": "Linguagem"
             },
             {
                 "name": "MySQL",
                 "color": "#4479A1",
-                "field": "Back-end"
+                "field": "Banco de dados"
             },
             {
                 "name": "Bootstrap",
                 "color": "#563D7C",
-                "field": "Back-end"
+                "field": "Front-end"
             }
         ]
     },
@@ -134,12 +134,12 @@
             {
                 "name": "JavaScript",
                 "color": "#F7DF1E",
-                "field": "Front-end"
+                "field": "Linguagem"
             },
             {
                 "name": "TypeScript",
                 "color": "#3178C6",
-                "field": "Front-end"
+                "field": "Linguagem"
             },
             {
                 "name": "React",
@@ -155,11 +155,6 @@
                 "name": "TailwindCSS",
                 "color": "#06B6D4",
                 "field": "Front-end"
-            },
-            {
-                "name": "Firebase",
-                "color": "#FFCA28",
-                "field": "Back-end"
             }
         ]
     },
@@ -177,7 +172,7 @@
             {
                 "name": "TypeScript",
                 "color": "#3178C6",
-                "field": "Back-end"
+                "field": "Linguagem"
             },
             {
                 "name": "Nest.js",
@@ -187,17 +182,12 @@
             {
                 "name": "PostgreSQL",
                 "color": "#326690",
-                "field": "Back-end"
-            },
-            {
-                "name": "TypeORM",
-                "color": "#F7DF1E",
-                "field": "Back-end"
+                "field": "Banco de dados"
             },
             {
                 "name": "JWT",
                 "color": "#000000",
-                "field": "Back-end"
+                "field": "Autenticação"
             }
         ]
     },
@@ -261,14 +251,9 @@
                 "field": "Mobile"
             },
             {
-                "name": "Firebase",
-                "color": "#FFCA28",
-                "field": "Back-end"
-            },
-            {
                 "name": "JavaScript",
                 "color": "#F7DF1E",
-                "field": "Mobile"
+                "field": "Linguagem"
             }
         ]
     }
