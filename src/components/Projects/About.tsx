@@ -34,7 +34,7 @@ const About = () => {
                     </a>
                 }
             </div>
-            <p className='text-sm hyphens-auto whitespace-pre-line'>
+            <p className='text-sm hyphens-auto whitespace-pre-line px-2'>
                 {selectedProject?.description}
             </p>
         </div>

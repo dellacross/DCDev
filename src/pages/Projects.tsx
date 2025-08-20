@@ -42,8 +42,8 @@ const Projects = () => {
                     setTab
                 }}
             >
-                <div className='h-full flex gap-x-[50px]'>
-                    <aside className='h-full w-[300px] flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
+                <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px]'>
+                    <aside className='h-full xl:w-[300px] w-[200px] flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
                         <p className='text-white mx-[10px] flex bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
                         <div className='flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
                             {

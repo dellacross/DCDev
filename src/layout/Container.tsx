@@ -32,11 +32,11 @@ const Home = ({ children }: { children: ReactNode }) => {
   }, [])
 
   return (
-    <div className='min-h-screen min-h-dvw h-dvw w-dvw overflow-hidden bg-[#191919] px-24 box-border'>
+    <div className='min-h-screen min-h-dvw h-dvw w-dvw overflow-hidden bg-[#191919] xl:px-24 lg:px-12 md:px-8 px-4 box-border'>
       <Header />
       <Banner />
       <Navbar />
-      <main className='flex flex-col justify-center h-[calc(100dvh-340px)] py-8 box-border'>
+      <main className='flex flex-col justify-center lg:h-[calc(100dvh-340px)] h-[calc(100dvh-320px)] py-4 box-border'>
         { children }
       </main>
       <Footer />

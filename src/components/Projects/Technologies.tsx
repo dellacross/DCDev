@@ -8,7 +8,7 @@ const Technologies = () => {
     const { selectedProject } = useContext(ProjectContext)
 
     return (
-        <div className='grid grid-cols-5 gap-4 text-sm text-white'>
+        <div className='grid xl:grid-cols-5 lg:grid-cols-3 gap-4 text-sm text-white overflow-auto p-2 lg:p-0'>
             {
                 selectedProject?.skills?.map((tech: SkillType, index: number) => (
                     <Tech 
