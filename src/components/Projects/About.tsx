@@ -1,14 +1,19 @@
 import { ProjectContext } from '../../pages/Projects'
 import { useContext } from 'react'
+import { ABOUTTAB } from '../../constants/ProjectTab.constant'
 import { Link } from 'lucide-react'
 
 const About = () => {
 
-    const { selectedProject } = useContext(ProjectContext)
+    const { 
+        selectedProject,
+        tab
+    } = useContext(ProjectContext)
 
     return (
-        <div className='flex flex-col gap-y-4 text-sm overflow-y-auto h-full py-2'>
-            <div className='flex gap-x-1'>
+        <div className={`${tab === ABOUTTAB ? 'flex' : 'lg:hidden'} flex-col gap-y-4 text-sm lg:overflow-y-auto lg:h-full py-2`}>
+            <div className='lg:hidden flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] mx-2 min-h-[40px]'>Sobre o projeto</div>
+            <div className='flex gap-x-1 py-4'>
                 {
                     selectedProject?.repositoryLink &&
                     <a 

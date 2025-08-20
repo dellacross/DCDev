@@ -61,7 +61,7 @@ const Projects = () => {
                         </div>
                     </aside>
                     <main className='flex-1 h-full flex w-full flex-col'>
-                        <header className='text-white border-b border-[#222222] flex items-center'>
+                        <header className='text-white border-b border-[#222222] lg:flex hidden items-center'>
                             <button 
                                 className={`h-7 text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === ABOUTTAB ? 'border-b' : ''}`}
                                 onClick={() => setTab(ABOUTTAB)}
