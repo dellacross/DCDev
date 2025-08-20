@@ -5,7 +5,7 @@
     "birth": "02/03/2001",
     "location": "Belo Horizonte/MG - Brasil",
     "nationality": "Brasileiro",
-    "about": "Sou desenvolvedor full stack e Bacharel em Sistemas de Informação pela Universidade Federal de Minas Gerais (UFMG), formação na qual desenvolvi diversos projetos, em diferentes tecnologias, como JavaScript, TypeScript, Python, C/C++, ReactJS, entre outras. Durante 2 anos, atuei como estagiário em desenvolvimento web, período no qual pude aprimorar minhas habilidades na criação de interfaces dinâmicas e responsivas utilizando ReactJS, JavaScript, HTML e CSS. No momento, atuo como desenvolvedor front end júnior.",
+    "about": "Desenvolvedor full stack e Bacharel em Sistemas de Informação pela Universidade Federal de Minas Gerais (UFMG), na minha formação desenvolvi diversos projetos, em diferentes tecnologias, como JavaScript, TypeScript, Python, C/C++, ReactJS, entre outras. Com essa experiência, adquiri conhecimento técnico em programação, banco de dados, redes e segurança da informação, além de habilidades de análise e resolução de problemas voltadas para o uso estratégico da tecnologia e da engenharia de software nas organizações.\n\nAlém do conhecimento técnico, ao longo da graduação adquiri diversas competências estratégicas, como gestão financeira, de pessoas e organização e tratamento de informação, o que expandiu minha capacidade de atuação e versatilidade dentro da empresa. Durante 2 anos, atuei como estagiário em desenvolvimento web, período no qual pude aprimorar minhas habilidades na criação de interfaces dinâmicas e responsivas utilizando ReactJS, JavaScript, HTML e CSS. No momento, atuo como desenvolvedor front end júnior.\n\nMinha graduação me deu a base necessária para iniciar minha carreira como desenvolvedor, aplicando os conhecimentos adquiridos para criar soluções práticas e evoluir constantemente. Essa formação também ampliou minha visão sobre gestão e análise, permitindo que eu unisse a parte técnica ao entendimento estratégico dos negócios.",
     "email": "victordelladev@gmail.com",
     "socials": {
         "instagram": "https://www.instagram.com/victordella/",
@@ -16,7 +16,7 @@
         {
             "id": "1",
             "field": "Games",
-            "description": "Gosto muito de jogos de computador, principalmente jogos de corrida e modo história",
+            "description": "Gosto muito de jogos, principalmente de corrida e modo história",
             "icon": "🎮"
         },
         {

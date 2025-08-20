@@ -70,7 +70,7 @@ const About = () => {
                 </aside>
                 <main className='flex-1 h-full flex flex-col'>
                     <div className='flex flex-col h-[60%] gap-y-2 px-2'>
-                        <p className='text-white text-sm'>
+                        <p className='text-white text-sm whitespace-pre-line hyphens-auto'>
                             {about.about}
                         </p>
                     </div>
