@@ -78,7 +78,7 @@ const Projects = () => {
                                 className={`h-7 text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === MEMBERSTAB ? 'border-b' : ''}`}
                                 onClick={() => setTab(MEMBERSTAB)}
                             >
-                                Members
+                                Equipe
                             </button>
                         </header>
                         <Project />

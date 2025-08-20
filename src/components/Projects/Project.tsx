@@ -1,9 +1,8 @@
-import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB, UPDATESTAB } from '../../constants/ProjectTab.constant'
+import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB } from '../../constants/ProjectTab.constant'
 import { ProjectContext } from '../../pages/Projects'
 import { useContext } from 'react'
 import About from './About'
 import Members from './Members'
-import Updates from './Updates'
 import Technologies from './Technologies'
 
 const Project = () => {

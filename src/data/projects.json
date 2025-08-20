@@ -16,7 +16,8 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Front-end dev"] },
       { "id": "2", "name": "Virgílio Borges", "email": "virgilio@example.com", "roles": ["Back-end dev"] }
     ],
-    "link": null
+    "repositoryLink": null,
+    "url": "https://restrito-beta.cotemig.com.br/"
   },
   {
     "id":"2",
@@ -39,7 +40,8 @@
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ],
-    "link": null
+    "repositoryLink": null,
+    "url": null
   },
   {
     "id":"3",
@@ -62,33 +64,11 @@
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ],
-    "link": "https://github.com/dellacross/DepositTracker"
+    "repositoryLink": "https://github.com/dellacross/DepositTracker",
+    "url": null
   },
   {
     "id":"4",
-    "name": "Conta Certa",
-    "description": "Sistema de gerenciamento de gastos.",
-    "skills": [
-      { "name": "TypeScript", "color": "#3178C6", "field": "Linguagem" },
-      { "name": "Node.js", "color": "#339933", "field": "Back-end" },
-      { "name": "Express", "color": "#000000", "field": "Back-end" },
-      { "name": "JWT", "color": "#000000", "field": "Autenticação" },
-      { "name": "Postman", "color": "#FF6C37", "field": "Ambiente de testes" },
-      { "name": "HTML", "color": "#E44D26", "field": "Front-end" },
-      { "name": "CSS", "color": "#1572B6", "field": "Front-end" },
-      { "name": "React", "color": "#61DAFB", "field": "Front-end" },
-      { "name": "RESTful API", "color": "#A2E0AD", "field": "Front-end" },
-      { "name": "Axios", "color": "#8560E5", "field": "Front-end" },
-      { "name": "PostgreSQL", "color": "#326690", "field": "Banco de dados" },
-      { "name": "Prisma", "color": "#5A67D8", "field": "Back-end" }
-    ],
-    "members": [
-      { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
-    ],
-    "link": null
-  },
-  {
-    "id":"5",
     "name": "DCDev",
     "description": "DCDev - Portfólio Profissional\n\nDCDev é um portfólio profissional construído com React, TypeScript e Tailwind CSS, projetado para apresentar experiências, projetos e habilidades de forma dinâmica e organizada.\n\nDurante o desenvolvimento, enfrentei desafios como a estruturação eficiente dos dados em JSON para garantir fácil manutenção e escalabilidade, além de implementar navegação entre páginas sem perder performance. A integração do Tailwind CSS exigiu atenção para manter o design responsivo e consistente em diferentes dispositivos.\n\nEntre as principais funcionalidades, destaco:\n\n• Organização modular de componentes reutilizáveis para cada área do portfólio (Sobre, Carreira, Educação, Projetos e Skills).\n\n• Sistema de tabs para navegação intuitiva entre diferentes categorias de informações.\n\n• Consumo de dados dinâmicos via arquivos JSON, facilitando atualizações sem alterar o código-fonte.\n\n• Layout responsivo e visual moderno, proporcionando uma experiência agradável ao usuário.\n\nOs principais aprendizados envolveram o uso avançado de React com TypeScript, boas práticas de componentização, gerenciamento de estado, e estilização com Tailwind CSS. Aprimorei também a manipulação de dados estáticos e a criação de interfaces acessíveis e performáticas.\n\nEsse projeto foi fundamental para consolidar conhecimentos em front-end moderno e fortalecer minha capacidade de entregar soluções profissionais e escaláveis.",
     "skills": [
@@ -102,10 +82,11 @@
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ],
-    "link": "https://github.com/dellacross/DCDev"
+    "repositoryLink": "https://github.com/dellacross/DCDev",
+    "url": "https://portfolio-victordella.netlify.app/"
   },
   {
-    "id":"6",
+    "id":"5",
     "name": "SujeitoPizza",
     "description": "SujeitoPizza - Gerenciador de pedidos\n\nSujeitoPizza é uma aplicação web que desenvolvi durante um curso de desenvolvimento que realizei. Este sistema é para gestão de pedidos em pizzarias, desenvolvida com Node.js, TypeScript, Express e Prisma ORM. O projeto foi um grande desafio, especialmente na implementação da autenticação segura de usuários, manipulação de uploads de imagens com Multer e integração eficiente com o banco de dados utilizando o Prisma. A modelagem do banco exigiu atenção para garantir relacionamentos corretos entre usuários, categorias, produtos e pedidos.\n\nDurante o desenvolvimento, aprimorei habilidades em arquitetura de software, separando responsabilidades entre controllers, services e middlewares, o que facilitou a manutenção e escalabilidade do sistema. Aprendi a lidar com tratamento de erros, validação de dados e boas práticas de API RESTful.\n\nEntre as principais funcionalidades estão:\n\n• Cadastro e autenticação de usuários\n\n• Gerenciamento de categorias e produtos\n\n• Upload de imagens para produtos\n\n• Criação, listagem, detalhamento e finalização de pedidos\n\n• Remoção de itens e pedidos\n\n• Proteção de rotas com middleware de autenticação\n\n• Integração com banco de dados relacional via Prisma\n\nEsse projeto proporcionou uma experiência prática completa, desde o planejamento da estrutura até a entrega de uma solução funcional, robusta e pronta para uso em ambientes reais.",
     "skills": [
@@ -119,10 +100,11 @@
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end dev"] }
     ],
-    "link": null
+    "repositoryLink": "https://github.com/dellacross/SujeitoPizza",
+    "url": null
   },
   {
-    "id":"7",
+    "id":"6",
     "name": "Rede de dados climáticos",
     "description": "Rede de dados climáticos\n\nEste sistema de rede de dados climáticos é uma aplicação cliente-servidor, desenvolvida em linguagem C, criada como trabalho prático para a disciplina de Redes de Computadores. O projeto tem como objetivo principal implementar a comunicação entre processos distintos utilizando sockets TCP, simulando cenários reais de troca de dados em redes.\n\nFuncionalidades:\n\n• Estabelecimento de conexão entre cliente e servidor via TCP.\n\n• Troca de mensagens e comandos entre as partes, com tratamento de erros e desconexões.\n\n• Modularização do código em arquivos separados para funções comuns, facilitando a manutenção e reutilização.\n\n• Documentação técnica detalhada para auxiliar na compreensão e uso do sistema.\n\nDesafios enfrentados:\n\n• Implementação da comunicação robusta entre cliente e servidor, lidando com possíveis falhas de rede.\n\n• Gerenciamento de múltiplos estados de conexão e tratamento de exceções.\n\n• Estruturação do código para garantir clareza, organização e escalabilidade.\n\n• Adaptação do projeto para diferentes ambientes e sistemas operacionais.\n\nDurante o desenvolvimento, aprofundei meus conhecimentos em programação de redes, manipulação de sockets, protocolos de comunicação TCP/IP e boas práticas de desenvolvimento em C. O projeto também proporcionou experiência prática na resolução de problemas reais de conectividade, modularização de sistemas e documentação técnica..",
     "skills": [
@@ -131,10 +113,11 @@
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
     ],
-    "link": null
+    "repositoryLink": "https://github.com/dellacross/Redes-TP1",
+    "url": null
   },
   {
-    "id":"8",
+    "id":"7",
     "name": "Rede de sistema elétrico",
     "description": "Rede de sistema elétrico\n\nEste sistema de rede de sistema elétrico é um projeto acadêmico, desenvolvido na linguagem C, que simula a comunicação entre cliente e servidor utilizando sockets TCP. O principal objetivo foi implementar um sistema capaz de transferir arquivos de texto entre as duas partes, explorando conceitos essenciais de redes de computadores.\n\nDurante o desenvolvimento, enfrentei desafios como o gerenciamento de múltiplas conexões simultâneas, tratamento de erros de comunicação, sincronização entre envio e recebimento de dados, além da manipulação eficiente de arquivos no sistema operacional. A implementação exigiu atenção especial à estrutura dos pacotes, controle de fluxo e à robustez do código para evitar falhas inesperadas.\n\nEntre os principais aprendizados, destaco o domínio da API de sockets em C, compreensão do funcionamento do protocolo TCP, técnicas de modularização do código e boas práticas de documentação. O projeto também proporcionou experiência prática em depuração de aplicações de rede e na resolução de problemas reais de comunicação.\n\nAs funcionalidades implementadas incluem:\n\n• Envio e recebimento de arquivos de texto entre cliente e servidor\n\n• Validação e manipulação dos arquivos transferidos\n\n• Tratamento de múltiplas requisições\n\n• Mensagens de status e feedback para o usuário\n\n• Estrutura modular com arquivos separados para funções comuns e principais\n\nEsse projeto demonstra habilidades técnicas em programação de baixo nível, lógica de redes, resolução de problemas e organização de sistemas distribuídos, sendo uma excelente adição ao portfólio para quem busca atuar na área de redes ou desenvolvimento de sistemas.",
     "skills": [
@@ -143,10 +126,11 @@
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
     ],
-    "link": null
+    "repositoryLink": "https://github.com/dellacross/Redes-TP2",
+    "url": null
   },
   {
-    "id":"9",
+    "id":"8",
     "name": "Gestão de jogos de loteria",
     "description": "Análise e Simulação da Mega-Sena\n\nEste projeto foi desenvolvido com o objetivo de aplicar estatística e programação em um contexto prático: a loteria Mega-Sena. Através de um notebook em Python, construí um sistema que simula apostas, sorteios e probabilidades, permitindo observar o quão improvável é acertar diferentes faixas de premiação.\n\nFuncionalidades\n\n• Geração de apostas aleatórias seguindo as regras oficiais da Mega-Sena.\n\n• Simulação de sorteios em grande escala para avaliar probabilidades reais de acertos.\n\n• Análise estatística da frequência de números sorteados e possíveis padrões.\n\n• Visualizações gráficas para melhor interpretação dos resultados.\n\n• Cálculo automatizado de combinações e probabilidades, considerando diferentes estratégias de jogo.\n\nDesafios enfrentados\n\n• Modelar corretamente as regras da Mega-Sena em código, garantindo precisão nos cálculos.\n\n• Lidar com a grande quantidade de combinações possíveis e otimizar as simulações.\n\n• Criar visualizações claras e objetivas para um tema que envolve números extensos e complexos.\n\n• Equilibrar simplicidade de uso com profundidade nas análises.\n\nAprendizados\n\n• Aprofundamento em probabilidade e estatística aplicadas a cenários reais.\n\n• Melhoria das habilidades em Python, especialmente com bibliotecas como NumPy, Pandas e Matplotlib.\n\n• Prática de organização de projetos em Jupyter Notebook, tornando a análise interativa e de fácil compreensão.\n\n• Desenvolvimento da capacidade de transformar problemas abstratos em soluções computacionais práticas.",
     "skills": [
@@ -159,6 +143,7 @@
     "members": [
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
     ],
-    "link": "https://colab.research.google.com/drive/1EhB1js637VId0vGQj5uq7czNnjj5Eyt_#scrollTo=J-t_zENLXCfn"
+    "repositoryLink": "https://colab.research.google.com/drive/1EhB1js637VId0vGQj5uq7czNnjj5Eyt_#scrollTo=J-t_zENLXCfn",
+    "url": null
   }
 ]

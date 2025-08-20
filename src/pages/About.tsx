@@ -4,7 +4,7 @@ import Photo from '../assets/images/photo.png'
 import Container from '../layout/Container'
 import about from '../data/about.json'
 import Curiosity from '../components/About/Curiosity'
-import { Github, Instagram, Linkedin } from 'lucide-react'
+import { AtSign, Github, Instagram, Linkedin } from 'lucide-react'
 
 const About = () => {
 
@@ -35,7 +35,13 @@ const About = () => {
                             <span className='bg-[#ffffff] text-[#8D4BB9] px-2 py-1 rounded-md text-sm'>{about.nationality}</span>
                         </p>
                     </div>
-                    <div className='flex justify-center p-4 gap-6 cursor-pointer'>
+                    <div 
+                        className='text-[#8D4BB9] px-2 justify-center py-2 flex bg-[#FFFFFF] gap-x-2 my-2 rounded-md cursor-pointer underline-offset-4 decoration-2 hover:underline'
+                        onClick={() => {navigator.clipboard.writeText(about.email)}}
+                    >
+                        <AtSign />{about.email}
+                    </div>
+                    <div className='flex justify-center gap-6 cursor-pointer'>
                         <a 
                             className='p-2 rounded-md bg-[#000000]'
                             href={about.socials.github}
