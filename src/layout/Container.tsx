@@ -32,7 +32,7 @@ const Home = ({ children }: { children: ReactNode }) => {
   }, [])
 
   return (
-    <div className='min-h-screen min-h-dvw h-dvw w-dvw overflow-hidden bg-[#191919] xl:px-24 lg:px-12 md:px-8 px-4 box-border'>
+    <div className='min-h-screen min-h-dvw h-dvw w-dvw overflow-hidden bg-[#191919] xl:px-24 lg:px-12 md:px-6 px-2 box-border'>
       <Header />
       <Banner />
       <Navbar />
