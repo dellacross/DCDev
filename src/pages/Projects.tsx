@@ -2,7 +2,7 @@ import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB, UPDATESTAB } from '../constants/
 import { useMemo, useState, createContext, useEffect } from 'react'
 import type { ProjectType } from '../types/Project.type'
 import { ProjectTabType } from '../types/ProjectTab.type'
-import { Code } from 'lucide-react'
+import { ChevronDown, ChevronUp, Code } from 'lucide-react'
 import Container from '../layout/Container'
 import projectsData from '../data/projects.json'
 import Project from '../components/Projects/Project'
@@ -27,6 +27,7 @@ const Projects = () => {
 
     const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null)
     const [tab, setTab] = useState<ProjectTabType>(ABOUTTAB)
+    const [openProjectList, setOpenProjectList] = useState<boolean>(false)
 
     useEffect(() => {
         setSelectedProject(projects[0] || null)
@@ -42,10 +43,31 @@ const Projects = () => {
                     setTab
                 }}
             >
-                <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px]'>
-                    <aside className='h-full xl:w-[300px] w-[200px] flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
-                        <p className='text-white mx-[10px] flex bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
-                        <div className='flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
+                <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] md:flex-row flex-col md:overflow-y-unset overflow-y-auto'>
+                    <aside className='h-full xl:w-[300px] md:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
+                        <p className='text-white mx-[10px] md:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
+                        <button
+                            onClick={() => setOpenProjectList(!openProjectList)}
+                            className='md:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522] gap-2'
+                        >
+                            { openProjectList ? <ChevronUp /> : <ChevronDown /> }
+                            Projetos
+                        </button>
+                        <div className='md:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
+                            {
+                                projects?.map((project, index) => (
+                                    <p 
+                                        key={index} 
+                                        className={`h-7 text-white m-0 flex text-sm w-max mx-4 py-[2px] gap-x-2 items-center cursor-pointer hover:border-b border-[#DEA522] border-solid ${selectedProject?.name === project.name ? 'border-b' : ''}`}
+                                        onClick={() => setSelectedProject(project)}
+                                    >
+                                        <Code size={16} />
+                                        {project.name}
+                                    </p>
+                                ))
+                            }
+                        </div>
+                        <div className={`${openProjectList ? 'flex' : 'hidden'} md:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1`}>
                             {
                                 projects?.map((project, index) => (
                                     <p 

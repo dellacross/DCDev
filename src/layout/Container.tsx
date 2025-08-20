@@ -36,7 +36,7 @@ const Home = ({ children }: { children: ReactNode }) => {
       <Header />
       <Banner />
       <Navbar />
-      <main className='flex flex-col justify-center lg:h-[calc(100dvh-340px)] md:h-[calc(100dvh-320px)] h-[calc(100dvh-250px)] py-4 box-border'>
+      <main className='flex flex-col justify-center lg:h-[calc(100dvh-340px)] md:h-[calc(100dvh-320px)] sm:h-[calc(100dvh-250px)] h-[calc(100dvh-200px)] py-4 box-border'>
         { children }
       </main>
       <Footer />
