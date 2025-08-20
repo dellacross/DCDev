@@ -11,13 +11,13 @@ const About = () => {
     } = useContext(ProjectContext)
 
     return (
-        <div className={`${tab === ABOUTTAB ? 'flex' : 'lg:hidden'} flex-col gap-y-4 text-sm ylg:h-full py-2`}>
+        <div className={`${tab === ABOUTTAB ? 'flex' : 'lg:hidden'} flex-col gap-y-4 text-sm lg:h-full py-2 md:overflow-y-auto`}>
             <div className='lg:hidden flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] sm:mx-2 min-h-[40px]'>Sobre o projeto</div>
             <div className='flex gap-x-1'>
                 {
                     selectedProject?.repositoryLink &&
                     <a 
-                        className='flex items-center rounded-md text-white size-max px-4'
+                        className='flex items-center rounded-md text-white size-max px-4 my-2'
                         href={selectedProject?.repositoryLink}
                         target='_blank'
                         rel='noopener noreferrer'
@@ -29,7 +29,7 @@ const About = () => {
                 {
                     selectedProject?.url &&
                     <a 
-                        className='flex items-center rounded-md text-white size-max px-4'
+                        className='flex items-center rounded-md text-white size-max px-4 my-2'
                         href={selectedProject?.url}
                         target='_blank'
                         rel='noopener noreferrer'

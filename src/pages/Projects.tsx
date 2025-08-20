@@ -33,6 +33,11 @@ const Projects = () => {
         setSelectedProject(projects[0] || null)
     }, [projects])
 
+    const toggleProject = (project: ProjectType) => {
+        setOpenProjectList(!openProjectList)
+        setSelectedProject(project)
+    }
+
     return (
         <Container>
             <ProjectContext.Provider 
@@ -43,7 +48,7 @@ const Projects = () => {
                     setTab
                 }}
             >
-                <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] md:flex-row flex-col md:overflow-y-unset overflow-y-auto'>
+                <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] md:flex-row flex-col max-md:overflow-y-auto'>
                     <aside className='h-full xl:w-[300px] md:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
                         <p className='text-white mx-[10px] md:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
                         <button
@@ -73,7 +78,7 @@ const Projects = () => {
                                     <p 
                                         key={index} 
                                         className={`h-7 text-white m-0 flex text-sm w-max mx-4 py-[2px] gap-x-2 items-center cursor-pointer hover:border-b border-[#DEA522] border-solid ${selectedProject?.name === project.name ? 'border-b' : ''}`}
-                                        onClick={() => setSelectedProject(project)}
+                                        onClick={() => toggleProject(project)}
                                     >
                                         <Code size={16} />
                                         {project.name}
@@ -83,21 +88,21 @@ const Projects = () => {
                         </div>
                     </aside>
                     <main className='flex-1 h-full flex w-full flex-col'>
-                        <header className='text-white border-b border-[#222222] lg:flex hidden items-center'>
+                        <header className='h-[30px] text-white border-b border-[#222222] lg:flex hidden items-center'>
                             <button 
-                                className={`h-7 text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === ABOUTTAB ? 'border-b' : ''}`}
+                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === ABOUTTAB ? 'border-b' : ''}`}
                                 onClick={() => setTab(ABOUTTAB)}
                             >
                                 Sobre o projeto
                             </button>
                             <button 
-                                className={`h-7 text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === TECHNOLOGIESTAB ? 'border-b' : ''}`}
+                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === TECHNOLOGIESTAB ? 'border-b' : ''}`}
                                 onClick={() => setTab(TECHNOLOGIESTAB)}
                             >
                                 Tecnologias
                             </button>
                             <button 
-                                className={`h-7 text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === MEMBERSTAB ? 'border-b' : ''}`}
+                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === MEMBERSTAB ? 'border-b' : ''}`}
                                 onClick={() => setTab(MEMBERSTAB)}
                             >
                                 Equipe

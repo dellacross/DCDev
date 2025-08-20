@@ -12,8 +12,8 @@ const Members = () => {
     } = useContext(ProjectContext)
 
     return (
-        <div className={`${tab === MEMBERSTAB ? 'lg:grid' : 'lg:hidden'} flex flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 lg:h-full`}>
-            <div className='lg:hidden flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] mx-2 min-h-[40px]'>Equipe</div>
+        <div className={`${tab === MEMBERSTAB ? 'lg:grid' : 'lg:hidden'} flex flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:p-4 lg:h-full md:overflow-y-auto`}>
+            <div className='lg:hidden flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] sm:mx-2 min-h-[40px]'>Equipe</div>
             {
                 selectedProject?.members?.map((member: MemberType) => (
                     <Member 

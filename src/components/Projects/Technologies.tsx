@@ -12,8 +12,8 @@ const Technologies = () => {
     } = useContext(ProjectContext)
 
     return (
-        <div className={`${tab === TECHNOLOGIESTAB ? 'lg:grid' : 'lg:hidden'} flex flex-col xl:grid-cols-5 lg:grid-cols-3 gap-4 text-sm text-white p-2 lg:p-0`}>
-            <div className='lg:hidden flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] mx-2 min-h-[40px]'>Tecnologias</div>
+        <div className={`${tab === TECHNOLOGIESTAB ? 'lg:grid' : 'lg:hidden'} flex flex-col xl:grid-cols-5 lg:grid-cols-3 gap-4 text-sm text-white md:p-2 lg:p-0 md:overflow-y-auto`}>
+            <div className='lg:hidden flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] sm:mx-2 min-h-[40px]'>Tecnologias</div>
             {
                 selectedProject?.skills?.map((tech: SkillType, index: number) => (
                     <Tech 
