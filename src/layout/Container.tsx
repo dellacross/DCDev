@@ -29,7 +29,7 @@ const Home = ({ children }: { children: ReactNode }) => {
     localStorage.setItem('__pg_nm', JSON.stringify(AboutPageData))
     SetTabTitle('Sobre mim')
     navigate('/about')
-  }, [])
+  }, [navigate])
 
   return (
     <div className='min-h-screen min-h-dvw h-dvw w-dvw overflow-hidden bg-[#191919] xl:px-24 lg:px-12 md:px-6 px-2 box-border'>

@@ -9,7 +9,7 @@ const Redirection = () => {
         const path = window.location.pathname
 
         if(path === '/') navigate('/about')
-    }, [])
+    }, [navigate])
 
     return null
 }
