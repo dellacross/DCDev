@@ -7,7 +7,7 @@ const Navbar = () => {
             <NavbarItem icon={<Lightbulb />} name='Sobre mim' color='#8D4BB9' endpoint='/about' />
             <NavbarItem icon={<BriefcaseBusiness />} name='Carreira' color='#086099' endpoint='/career' />
             <NavbarItem icon={<GraduationCap />} name='Educação' color='#C91634' endpoint='/educational' />
-            <NavbarItem icon={<BrainCog />} name='skills' color='#29903B' endpoint='/skills' />
+            <NavbarItem icon={<BrainCog />} name='Skills' color='#29903B' endpoint='/skills' />
             <NavbarItem icon={<Braces />} name='Projetos' color='#DEA522' endpoint='/projects' />
         </nav>
     )
