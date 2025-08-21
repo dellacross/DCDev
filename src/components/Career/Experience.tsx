@@ -1,23 +1,33 @@
-import { useContext } from "react"
-import { ProfessionalExperienceType } from "../../types/ProfessionalExperience.type"
 import { ProfessionalExperienceContext } from "../../pages/Career"
+import { Building2, Clock, Computer } from "lucide-react"
+import { useContext } from "react"
 
-const Experience = ({ id, title, company, duration, description, location }: ProfessionalExperienceType) => {
+const Experience = () => {
 
-  const { 
-    selectedExperience, 
-    setSelectedExperience 
-  } = useContext(ProfessionalExperienceContext)
+  const { selectedExperience } = useContext(ProfessionalExperienceContext)
 
   return (
-    <div 
-      className={`flex flex-col gap-y-1 px-4 py-2 border-box bg-[#262626] text-white cursor-pointer border-solid border-b hover:bg-[#333333] hover:border-[#086099] ${selectedExperience?.id === id ? 'bg-[#333333] border-[#086099]' : 'border-transparent'}`} 
-      onClick={() => setSelectedExperience({ title, company, duration, description, location, id })}
-    >
-      <p className=''>{title}</p>
-      <p className='text-xs'>{company}</p>
-      <p className='text-xs'>{duration}</p>
-    </div>
+    <main className='flex-1 h-full flex w-full flex-col bg-[#262626] rounded-lg p-4 text-white max-lg:overflow-y-auto'>
+      <p className='font-semibold text-lg'>{ selectedExperience?.title || ``}</p>
+      <div className='px-4 py-2 gap-4 flex max-md:flex-col'>
+        <p className='flex items-center rounded-md text-white bg-[#262626]'>
+          <span className='bg-[#086099] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><Building2 size={16} /></span>
+          <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>{selectedExperience?.company}</span>
+        </p>
+        <p className='flex items-center rounded-md text-white bg-[#262626]'>
+          <span className='bg-[#086099] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><Clock size={16} /></span>
+          <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>{selectedExperience?.duration}</span>
+        </p>
+        <p className='flex items-center rounded-md text-white bg-[#262626]'>
+          <span className='bg-[#086099] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><Computer size={16} /></span>
+          <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>{selectedExperience?.location}</span>
+        </p>
+      </div>
+      <div className='flex min-h-[40px] items-center text-lg mb-2'>
+        <span className='bg-[#08609930] text-[#086099] px-5 py-1'>Minha experiência</span>
+      </div>
+      <p className='whitespace-pre-line text-sm py-2 px-1 hyphens-auto'>{selectedExperience?.description}</p>
+    </main>
   )
 }
 

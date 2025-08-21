@@ -1,81 +1,88 @@
+import { createContext, useEffect, useMemo, useState } from 'react'
 import { EducationalExperienceType } from '../types/EducationalExperience.type'
-import { useEffect, useMemo, useState } from 'react'
 import Container from '../layout/Container'
 import Experience from '../components/Educational/Experience'
 import educationalData from '../data/educational.json'
-import { Building2, Clock, GraduationCap, Link, Lock } from 'lucide-react'
+import { ChevronDown, ChevronUp } from 'lucide-react'
+
+type EducationalContextType = {
+  selectedExperience: EducationalExperienceType | null;
+  setSelectedExperience: (experience: EducationalExperienceType | null) => void;
+}
+
+export const EducationalContext = createContext<EducationalContextType>({
+  selectedExperience: null,
+  setSelectedExperience: () => {}
+})
 
 const Educational = () => {
 
   const EducationalExperiences: EducationalExperienceType[] = useMemo(() => educationalData, [])
 
   const [selectedExperience, setSelectedExperience] = useState<EducationalExperienceType | null>(null)
+  const [openExperienceList, setOpenExperienceList] = useState<boolean>(false)
 
   useEffect(() => {
     setSelectedExperience(EducationalExperiences[0] || null)
   }, [EducationalExperiences])
 
+  const toggleExperience = (experience: EducationalExperienceType) => {
+    setOpenExperienceList(!openExperienceList)
+    setSelectedExperience(experience)
+  }
+
   return (
     <Container>
-      <div className='h-full flex gap-x-[50px]'>
-        <aside className='h-full w-[300px] flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
-          <p className='text-white mx-[10px] flex bg-[#262626] w-max px-4 py-[2px] border-b border-[#C91634] border-solid text-[#C91634]'>Experiências Acadêmicas</p>
-          <div className='flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2'>
-            {
-              EducationalExperiences?.map(experience => (
-                <div 
-                  className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
-                  onClick={() => setSelectedExperience(experience)}
-                >
-                  <p className=''>{experience.name}</p>
-                  <p className='text-xs'>{experience.institution}</p>
-                  { experience.duration && <p className='text-xs'>{experience.duration}</p> }
-                </div>
-              ))
-            }
-          </div>
-        </aside>
-        <main className='flex-1 h-full flex w-full flex-col bg-[#262626] rounded-lg p-4'>
-            <p className='text-white text-lg font-semibold'>{selectedExperience?.name}</p>
-            <div className='px-4 py-2 gap-4 flex'>
-              <p className='flex items-center rounded-md text-white bg-[#262626]'>
-                <span className='bg-[#C91634] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><Building2 size={16} /></span>
-                <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>{selectedExperience?.institution}</span>
-              </p>
+      <EducationalContext.Provider 
+        value={{ 
+          selectedExperience, 
+          setSelectedExperience 
+        }}
+      >
+        <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col gap-y-2'>
+          <aside className='lg:h-full lg:w-[300px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
+            <p className='text-white mx-[10px] lg:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#C91634] border-solid text-[#C91634]'>Experiências Acadêmicas</p>
+            <button
+              onClick={() => setOpenExperienceList(!openExperienceList)}
+              className='lg:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#C91634] border-solid text-[#DEA522] gap-2'
+            >
+              { openExperienceList ? <ChevronUp /> : <ChevronDown /> }
+              Experiências Acadêmicas
+            </button>
+            <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2'>
               {
-                selectedExperience?.unfinished &&
-                <p className='flex items-center rounded-md text-white bg-[#262626]'>
-                  <span className='bg-[#C91634] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><Lock size={16} /></span>
-                  <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>Trancado</span>
-                </p>
+                EducationalExperiences?.map(experience => (
+                  <div 
+                    key={experience.id}
+                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
+                    onClick={() => setSelectedExperience(experience)}
+                  >
+                    <p className=''>{experience.name}</p>
+                    <p className='text-xs'>{experience.institution}</p>
+                    { experience.duration && <p className='text-xs'>{experience.duration}</p> }
+                  </div>
+                ))
               }
+            </div>
+            <div className={`${openExperienceList ? 'flex' : 'hidden'} lg:hidden flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>
               {
-                selectedExperience?.completed &&
-                <p className='flex items-center rounded-md text-white bg-[#262626]'>
-                  <span className='bg-[#C91634] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><GraduationCap size={16} /></span>
-                  <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>Concluído</span>
-                </p>
+                EducationalExperiences?.map(experience => (
+                  <div 
+                    key={experience.id}
+                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
+                    onClick={() => toggleExperience(experience)}
+                  >
+                    <p className=''>{experience.name}</p>
+                    <p className='text-xs'>{experience.institution}</p>
+                    { experience.duration && <p className='text-xs'>{experience.duration}</p> }
+                  </div>
+                ))
               }
-              <p className='flex items-center rounded-md text-white bg-[#262626]'>
-                <span className='bg-[#C91634] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><Clock size={16} /></span>
-                <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>{selectedExperience?.duration}</span>
-              </p>
-              <a
-                className='flex items-center rounded-md text-white bg-[#262626]'
-                href={selectedExperience?.link || '#'}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <span className='bg-[#C91634] flex items-center justify-center h-[30px] w-[30px] rounded-l-md'><Link size={16} /></span>
-                <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>Sobre o curso</span>
-              </a>
             </div>
-            <div className='flex min-h-[40px] items-center text-lg mb-2'>
-              <span className='bg-[#C9163430] text-[#C91634] px-5 py-1'>Minha trajetória no curso</span>
-            </div>
-            <div className='text-white text-sm overflow-auto px-2 whitespace-pre-line hyphens-auto py-2'>{selectedExperience?.description}</div>
-        </main>
-      </div>
+          </aside>
+          <Experience />
+        </div>
+      </EducationalContext.Provider>
     </Container>
   )
 }

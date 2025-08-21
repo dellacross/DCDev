@@ -60,9 +60,9 @@ const Projects = () => {
                         </button>
                         <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
                             {
-                                projects?.map((project, index) => (
+                                projects?.map(project => (
                                     <p 
-                                        key={index} 
+                                        key={project.id} 
                                         className={`h-7 text-white m-0 flex text-sm w-max mx-4 py-[2px] gap-x-2 items-center cursor-pointer hover:border-b border-[#DEA522] border-solid ${selectedProject?.name === project.name ? 'border-b' : ''}`}
                                         onClick={() => setSelectedProject(project)}
                                     >
@@ -74,9 +74,9 @@ const Projects = () => {
                         </div>
                         <div className={`${openProjectList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1`}>
                             {
-                                projects?.map((project, index) => (
+                                projects?.map(project => (
                                     <p 
-                                        key={index} 
+                                        key={project.id} 
                                         className={`h-7 text-white m-0 flex text-sm w-max mx-4 py-[2px] gap-x-2 items-center cursor-pointer hover:border-b border-[#DEA522] border-solid ${selectedProject?.name === project.name ? 'border-b' : ''}`}
                                         onClick={() => toggleProject(project)}
                                     >

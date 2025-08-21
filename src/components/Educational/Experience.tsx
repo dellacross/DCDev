@@ -1,12 +1,52 @@
-import { EducationalExperienceType } from "../../types/EducationalExperience.type"
+import { Building2, Clock, GraduationCap, Link, Lock } from "lucide-react"
+import { EducationalContext } from "../../pages/Educational"
+import { useContext } from "react"
 
-const Experience = ({ name, institution, duration }: EducationalExperienceType) => {
+const Experience = () => {
+
+  const { selectedExperience } = useContext(EducationalContext)
+
   return (
-    <div className='flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b border-transparent border-solid hover:bg-[#333333] hover:border-[#C91634]'>
-      <p className=''>{name}</p>
-      <p className='text-xs'>{institution}</p>
-      { duration && <p className='text-xs'>{duration}</p> }
-    </div>
+    <main className='flex-1 lg:h-full flex w-full flex-col bg-[#262626] rounded-lg p-4 max-lg:overflow-y-auto'>
+      <p className='text-white text-lg font-semibold'>{selectedExperience?.name}</p>
+      <div className='px-4 py-2 gap-4 flex max-md:flex-col md:grid grid-cols-3 2xl:flex w-full'>
+        <p className='flex items-center rounded-md text-white bg-[#262626] col-span-3 min-h-[30px]'>
+          <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><Building2 size={16} /></span>
+          <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>{selectedExperience?.institution}</span>
+        </p>
+        {
+          selectedExperience?.unfinished &&
+          <p className='flex items-center rounded-md text-white bg-[#262626] col-span-1 min-h-[30px]'>
+            <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><Lock size={16} /></span>
+            <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Trancado</span>
+          </p>
+        }
+        {
+          selectedExperience?.completed &&
+          <p className='flex items-center rounded-md text-white bg-[#262626] col-span-1 min-h-[30px]'>
+            <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><GraduationCap size={16} /></span>
+            <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Concluído</span>
+          </p>
+        }
+        <p className='flex items-center rounded-md text-white bg-[#262626] col-span-1 min-h-[30px]'>
+          <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><Clock size={16} /></span>
+          <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>{selectedExperience?.duration}</span>
+        </p>
+        <a
+          className='flex items-center rounded-md text-white bg-[#262626] col-span-1 min-h-[30px]'
+          href={selectedExperience?.link || '#'}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><Link size={16} /></span>
+          <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Sobre o curso</span>
+        </a>
+      </div>
+      <div className='flex min-h-[40px] items-center text-lg mb-2'>
+        <span className='bg-[#C9163430] text-[#C91634] px-5 py-1'>Minha trajetória no curso</span>
+      </div>
+      <div className='text-white text-sm lg:overflow-auto px-2 whitespace-pre-line hyphens-auto py-2'>{selectedExperience?.description}</div>
+    </main>
   )
 }
 
