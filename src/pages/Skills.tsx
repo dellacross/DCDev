@@ -29,6 +29,11 @@ const Skills = () => {
 
     useEffect(() => { setSelectedCourse(CoursesList[0] || null) }, [CoursesList])
 
+    const toggleCourse = (course: CourseType) => {
+        setOpenSkillList(!openSkillList)
+        setSelectedCourse(course)
+    }
+
     return (
         <Container>
             <SkillsContext.Provider 
@@ -53,7 +58,7 @@ const Skills = () => {
                                 CoursesList.map(course => (
                                     <div 
                                         key={course.id}
-                                        className={`h-7 text-white m-0 flex text-sm w-max mx-4 py-[2px] gap-x-2 items-center cursor-pointer hover:border-b border-[#29903B] border-solid ${selectedCourse?.id === course.id ? 'border-b' : ''}`}
+                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
                                         onClick={() => setSelectedCourse(course)}
                                     >
                                         <p className=''>{course.name}</p>
@@ -62,13 +67,13 @@ const Skills = () => {
                                 ))
                             }
                         </div>
-                        <div className={`${openSkillList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1`}>
+                        <div className={`${openSkillList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>
                             {
                                 CoursesList.map(course => (
                                     <div 
                                         key={course.id}
-                                        className={`h-7 text-white m-0 flex text-sm w-max mx-4 py-[2px] gap-x-2 items-center cursor-pointer hover:border-b border-[#29903B] border-solid ${selectedCourse?.id === course.id ? 'border-b' : ''}`}
-                                        onClick={() => setSelectedCourse(course)}
+                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
+                                        onClick={() => toggleCourse(course)}
                                     >
                                         <p className=''>{course.name}</p>
                                         <p className='text-xs'>{course.institution}</p>

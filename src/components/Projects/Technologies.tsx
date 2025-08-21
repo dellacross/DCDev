@@ -1,4 +1,4 @@
-import { TECHNOLOGIESTAB } from '../../constants/SkillsTab.constant'
+import { TECHNOLOGIESTAB } from '../../constants/ProjectTab.constant'
 import { ProjectContext } from '../../pages/Projects'
 import { useContext } from 'react'
 import { SkillType } from '../../types/Skill.type'
