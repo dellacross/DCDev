@@ -2,6 +2,7 @@ import { Building2, Clock, Link } from 'lucide-react'
 import { SkillsContext } from '../../pages/Skills'
 import { useContext } from 'react'
 import { DETAILSTAB } from '../../constants/SkillsTab.constant'
+import TextContainer from '../TextContainer'
 import HighlightedLabel from '../HighlightedLabel'
 
 const Details = () => {
@@ -43,9 +44,7 @@ const Details = () => {
           <span className='px-2'>Acessar certificado</span>
         </a>
       </div>
-      <p className='hyphens-auto text-justify px-2 whitespace-pre-line'>
-        { selectedCourse?.description }
-      </p>
+      <TextContainer content={selectedCourse?.description} />
     </div>
   )
 }

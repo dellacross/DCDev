@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { ABOUTTAB } from '../../constants/ProjectTab.constant'
 import { Link } from 'lucide-react'
 import HighlightedLabel from '../HighlightedLabel'
+import TextContainer from '../TextContainer'
 
 const About = () => {
 
@@ -40,9 +41,7 @@ const About = () => {
                     </a>
                 }
             </div>
-            <p className='text-sm hyphens-auto whitespace-pre-line md:px-2 '>
-                {selectedProject?.description}
-            </p>
+            <TextContainer content={selectedProject?.description} />
         </div>
     )
 }

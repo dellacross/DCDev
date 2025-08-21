@@ -10,5 +10,5 @@ export type CourseType = {
     link: string | null;
     certificate: string | null;
     skills: SkillType[];
-    description: string | null;
+    description: string;
 }

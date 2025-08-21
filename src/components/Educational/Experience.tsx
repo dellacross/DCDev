@@ -2,6 +2,7 @@ import { Building2, Calendar, GraduationCap, Link, Lock, ShieldCheck } from "luc
 import { EducationalContext } from "../../pages/Educational"
 import { useContext } from "react"
 import HighlightedLabel from "../HighlightedLabel"
+import TextContainer from "../TextContainer"
 
 const Experience = () => {
 
@@ -58,7 +59,7 @@ const Experience = () => {
         </a>
       </div>
       <HighlightedLabel label='Minha trajetória no curso' color='#C91634' />
-      <div className='text-white text-sm lg:overflow-auto px-2 whitespace-pre-line hyphens-auto py-2'>{selectedExperience?.description}</div>
+      <TextContainer content={selectedExperience?.description} />
     </main>
   )
 }
