@@ -12,7 +12,7 @@ const About = () => {
         const [dia, mes, ano] = about.birth.split('/').map(Number);
         const birthDate = new Date(ano, mes - 1, dia)
         return calculateAge(birthDate)
-    }, [about])
+    }, [])
 
     return (
         <Container>
@@ -21,7 +21,7 @@ const About = () => {
                     <div className='flex justify-between gap-x-4 bg-[#775390] px-4 py-2 rounded-t-lg'>
                         <img 
                             src={Photo}
-                            alt='photo' 
+                            alt='about-photo' 
                             className='size-32 rounded-lg border-[#8D4BB9]'
                         />
                         <div className='flex flex-col text-white py-2 gap-y-1 flex-1 font-semibold'>
@@ -82,10 +82,7 @@ const About = () => {
                         <div className='flex-col flex gap-y-4 py-2 lg:overflow-y-auto px-1'>
                             {
                                 about.curiosities.map(curiosity => (
-                                    <Curiosity 
-                                        key={curiosity.id} 
-                                        {...curiosity} 
-                                    />
+                                    <Curiosity key={curiosity.id} {...curiosity} />
                                 ))
                             }
                         </div>
