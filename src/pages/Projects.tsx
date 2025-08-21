@@ -49,7 +49,7 @@ const Projects = () => {
                 }}
             >
                 <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col max-lg:overflow-y-auto'>
-                    <aside className='h-full xl:w-[300px] md:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
+                    <aside className='lg:h-full xl:w-[300px] lg:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
                         <p className='text-white mx-[10px] lg:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
                         <button
                             onClick={() => setOpenProjectList(!openProjectList)}
