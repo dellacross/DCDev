@@ -3,9 +3,10 @@ import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB } from '../constants/ProjectTab.c
 import { ChevronDown, ChevronUp, Code } from 'lucide-react'
 import type { ProjectType } from '../types/Project.type'
 import { ProjectTabType } from '../types/ProjectTab.type'
+import Project from '../components/Projects/Project'
+import NavLabel from '../components/NavLabel'
 import Container from '../layout/Container'
 import projectsData from '../data/projects.json'
-import Project from '../components/Projects/Project'
 
 type ProjectContextType = {
     selectedProject: any; // Replace 'any' with the actual type if known
@@ -50,7 +51,7 @@ const Projects = () => {
             >
                 <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col max-lg:overflow-y-auto'>
                     <aside className='lg:h-full xl:w-[300px] lg:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
-                        <p className='text-white mx-[10px] lg:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
+                        <NavLabel label='Projetos' color='#DEA522' />
                         <button
                             onClick={() => setOpenProjectList(!openProjectList)}
                             className='lg:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522] gap-2'

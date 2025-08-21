@@ -6,6 +6,7 @@ import Course from '../components/Skills/Course';
 import courses from '../data/courses.json';
 import Container from '../layout/Container';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import NavLabel from '../components/NavLabel';
 
 type SkillsContextType = {
     selectedCourse: CourseType | null;
@@ -45,7 +46,7 @@ const Skills = () => {
             >
                 <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col max-lg:overflow-y-auto'>
                     <aside className='lg:h-full xl:w-[300px] lg:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
-                        <p className='text-white mx-[10px] lg:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#29903B] border-solid text-[#DEA522]'>Cursos</p>
+                        <NavLabel label='Cursos' color='#29903B' />
                         <button
                             onClick={() => setOpenSkillList(!openSkillList)}
                             className='lg:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#29903B] border-solid text-[#DEA522] gap-2'

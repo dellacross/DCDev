@@ -1,6 +1,7 @@
 import { createContext, useEffect, useMemo, useState } from 'react'
 import { EducationalExperienceType } from '../types/EducationalExperience.type'
 import { ChevronDown, ChevronUp } from 'lucide-react'
+import NavLabel from '../components/NavLabel'
 import Container from '../layout/Container'
 import Experience from '../components/Educational/Experience'
 import educationalData from '../data/educational.json'
@@ -41,7 +42,7 @@ const Educational = () => {
       >
         <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col gap-y-2'>
           <aside className='lg:h-full lg:w-[300px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
-            <p className='text-white mx-[10px] lg:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#C91634] border-solid text-[#C91634]'>Experiências Acadêmicas</p>
+            <NavLabel label='Experiências Acadêmicas' color='#C91634' />
             <button
               onClick={() => setOpenExperienceList(!openExperienceList)}
               className='lg:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#C91634] border-solid text-[#DEA522] gap-2'
