@@ -1,4 +1,4 @@
-import { Building2, Calendar, GraduationCap, Link, Lock } from "lucide-react"
+import { Building2, Calendar, GraduationCap, Link, Lock, ShieldCheck } from "lucide-react"
 import { EducationalContext } from "../../pages/Educational"
 import { useContext } from "react"
 import HighlightedLabel from "../HighlightedLabel"
@@ -46,6 +46,15 @@ const Experience = () => {
         >
           <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><Link size={16} /></span>
           <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Sobre o curso</span>
+        </a>
+        <a
+          className='flex items-center rounded-md text-white bg-[#262626] col-span-1 min-h-[30px]'
+          href={selectedExperience?.certificate || '#'}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><ShieldCheck size={16} /></span>
+          <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Certificado</span>
         </a>
       </div>
       <HighlightedLabel label='Minha trajetória no curso' color='#C91634' />

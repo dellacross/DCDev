@@ -1,12 +1,13 @@
-import { DETAILSTAB, TECHNOLOGIESTAB } from '../constants/SkillsTab.constant';
 import { useMemo, useState, createContext, useEffect } from 'react';
+import { DETAILSTAB, TECHNOLOGIESTAB } from '../constants/SkillsTab.constant';
 import { SkillsTabType } from '../types/SkillsTab.type';
 import { CourseType } from '../types/Course.type';
 import Course from '../components/Skills/Course';
 import courses from '../data/courses.json';
-import Container from '../layout/Container';
-import { ChevronDown, ChevronUp } from 'lucide-react';
 import NavLabel from '../components/NavLabel';
+import Container from '../layout/Container';
+import ListButton from '../components/ListButton';
+import ListItem from '../components/ListItem';
 
 type SkillsContextType = {
     selectedCourse: CourseType | null;
@@ -47,38 +48,33 @@ const Skills = () => {
                 <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col max-lg:overflow-y-auto'>
                     <aside className='lg:h-full xl:w-[300px] lg:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
                         <NavLabel label='Cursos' color='#29903B' />
-                        <button
-                            onClick={() => setOpenSkillList(!openSkillList)}
-                            className='lg:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#29903B] border-solid text-[#DEA522] gap-2'
-                        >
-                            { openSkillList ? <ChevronUp /> : <ChevronDown /> }
-                            Cursos
-                        </button>
+                        <ListButton color='#29903B' label='Cursos' state={openSkillList} setter={setOpenSkillList} />
                         <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
                             {
                                 CoursesList.map(course => (
-                                    <div 
+                                    <ListItem 
                                         key={course.id}
-                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
-                                        onClick={() => setSelectedCourse(course)}
-                                    >
-                                        <p className=''>{course.name}</p>
-                                        <p className='text-xs'>{course.institution}</p>
-                                    </div>
+                                        currentState={selectedCourse}
+                                        state={course}
+                                        setter={setSelectedCourse}
+                                        color='#29903B'
+                                        title={course.name}
+                                        subtitles={[course.institution]}
+                                    />
                                 ))
                             }
                         </div>
-                        <div className={`${openSkillList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>
-                            {
+                        <div className={`${openSkillList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>{
                                 CoursesList.map(course => (
-                                    <div 
+                                    <ListItem 
                                         key={course.id}
-                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
-                                        onClick={() => toggleCourse(course)}
-                                    >
-                                        <p className=''>{course.name}</p>
-                                        <p className='text-xs'>{course.institution}</p>
-                                    </div>
+                                        currentState={selectedCourse}
+                                        state={course}
+                                        setter={toggleCourse}
+                                        color='#29903B'
+                                        title={course.name}
+                                        subtitles={[course.institution]}
+                                    />
                                 ))
                             }
                         </div>
