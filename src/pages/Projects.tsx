@@ -6,6 +6,7 @@ import { Code } from 'lucide-react'
 import Project from '../components/Projects/Project'
 import NavLabel from '../components/NavLabel'
 import Container from '../layout/Container'
+import SubnavItem from '../components/SubnavItem'
 import ListButton from '../components/ListButton'
 import projectsData from '../data/projects.json'
 
@@ -85,24 +86,27 @@ const Projects = () => {
                     </aside>
                     <main className='flex-1 h-full flex w-full flex-col'>
                         <header className='h-[30px] text-white border-b border-[#222222] lg:flex hidden items-center'>
-                            <button 
-                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === ABOUTTAB ? 'border-b' : ''}`}
-                                onClick={() => setTab(ABOUTTAB)}
-                            >
-                                Sobre o projeto
-                            </button>
-                            <button 
-                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === TECHNOLOGIESTAB ? 'border-b' : ''}`}
-                                onClick={() => setTab(TECHNOLOGIESTAB)}
-                            >
-                                Tecnologias
-                            </button>
-                            <button 
-                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] ${tab === MEMBERSTAB ? 'border-b' : ''}`}
-                                onClick={() => setTab(MEMBERSTAB)}
-                            >
-                                Equipe
-                            </button>
+                            <SubnavItem 
+                                currentState={tab}
+                                state={ABOUTTAB}
+                                setter={setTab}
+                                color="#DEA522"
+                                label="Sobre o projeto"
+                            />
+                            <SubnavItem 
+                                currentState={tab}
+                                state={TECHNOLOGIESTAB}
+                                setter={setTab}
+                                color="#DEA522"
+                                label="Tecnologias"
+                            />
+                            <SubnavItem 
+                                currentState={tab}
+                                state={MEMBERSTAB}
+                                setter={setTab}
+                                color="#DEA522"
+                                label="Membros"
+                            />
                         </header>
                         <Project />
                     </main>

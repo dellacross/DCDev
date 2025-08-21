@@ -4,10 +4,11 @@ import { SkillsTabType } from '../types/SkillsTab.type';
 import { CourseType } from '../types/Course.type';
 import Course from '../components/Skills/Course';
 import courses from '../data/courses.json';
+import ListItem from '../components/ListItem';
 import NavLabel from '../components/NavLabel';
 import Container from '../layout/Container';
+import SubnavItem from '../components/SubnavItem';
 import ListButton from '../components/ListButton';
-import ListItem from '../components/ListItem';
 
 type SkillsContextType = {
     selectedCourse: CourseType | null;
@@ -81,18 +82,20 @@ const Skills = () => {
                     </aside>
                     <main className='flex-1 h-full flex w-full flex-col'>
                         <header className='h-[30px] text-white border-b border-[#222222] lg:flex hidden items-center'>
-                            <button 
-                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#29903B] ${tab === DETAILSTAB ? 'border-b' : ''}`}
-                                onClick={() => setTab(DETAILSTAB)}
-                            >
-                                Detalhes
-                            </button>
-                            <button 
-                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-[#29903B] ${tab === TECHNOLOGIESTAB ? 'border-b' : ''}`}
-                                onClick={() => setTab(TECHNOLOGIESTAB)}
-                            >
-                                Tecnologias
-                            </button>
+                            <SubnavItem 
+                                currentState={tab}
+                                state={DETAILSTAB}
+                                setter={setTab}
+                                color="#29903B"
+                                label="Detalhes"
+                            />
+                            <SubnavItem 
+                                currentState={tab}
+                                state={TECHNOLOGIESTAB}
+                                setter={setTab}
+                                color="#29903B"
+                                label="Tecnologias"
+                            />
                         </header>
                         <Course />
                     </main>
