@@ -83,7 +83,7 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ],
     "repositoryLink": "https://github.com/dellacross/DCDev",
-    "url": "https://portfolio-victordella.netlify.app/"
+    "url": "https://dcdev-portfolio.netlify.app/"
   },
   {
     "id":"5",
