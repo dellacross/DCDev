@@ -16,19 +16,19 @@ const About = () => {
 
     return (
         <Container>
-            <div className='h-full flex gap-x-[50px]'>
-                <aside className='h-min w-[300px] flex flex-col'>
+            <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col gap-y-2 max-lg:overflow-y-auto'>
+                <aside className='h-min w-[300px] flex flex-col max-lg:mx-auto max-lg:w-[50%] max-md:w-full max-md:px-4'>
                     <div className='flex justify-between gap-x-4 bg-[#775390] px-4 py-2 rounded-t-lg'>
                         <img 
                             src={Photo}
                             alt='photo' 
                             className='size-32 rounded-lg border-[#8D4BB9]'
                         />
-                        <div className='flex flex-col text-white py-2 gap-y-1'>
-                            <p className='font-semibold'>{about.profession}</p>
+                        <div className='flex flex-col text-white py-2 gap-y-1 flex-1 font-semibold'>
+                            {about.profession}
                         </div>
                     </div>
-                    <div className='flex flex-col gap-y-1 bg-[#775390] rounded-b-lg px-4 py-2'>
+                    <div className='flex flex-col gap-y-1 bg-[#775390] rounded-b-lg px-4 py-2 w-full max-lg:items-center'>
                         <p className='text-white'>{about.fullname}</p>
                         <p className='flex gap-x-2 px-1'>
                             <span className='bg-[#ffffff] text-[#8D4BB9] px-2 py-1 rounded-md text-sm'>{`${age} anos`}</span>
@@ -36,7 +36,7 @@ const About = () => {
                         </p>
                     </div>
                     <div 
-                        className='text-[#8D4BB9] px-2 justify-center py-2 flex bg-[#FFFFFF] gap-x-2 my-2 rounded-md cursor-pointer underline-offset-4 decoration-2 hover:underline'
+                        className='text-[#8D4BB9] p-2 justify-center flex bg-[#FFFFFF] gap-x-2 my-2 rounded-md cursor-pointer underline-offset-4 decoration-2 hover:underline'
                         onClick={() => {navigator.clipboard.writeText(about.email)}}
                     >
                         <AtSign />{about.email}
@@ -68,23 +68,26 @@ const About = () => {
                         </a>
                     </div>
                 </aside>
-                <main className='flex-1 h-full flex flex-col'>
-                    <div className='flex flex-col h-[60%] gap-y-2 px-2'>
-                        <p className='text-white text-sm whitespace-pre-line hyphens-auto'>
+                <main className='flex-1 h-full flex w-[calc(100% - 300px)] max-md:flex-col gap-y-4'>
+                    <div className='flex flex-col gap-y-2 px-2'>
+                        <div className='flex text-lg px-4 py-2 bg-[#8D4BB930] text-[#8D4BB9] min-h-[50px] items-center'>Olá, meu nome é {about.fullname}!</div>
+                        <p className='text-white text-sm whitespace-pre-line hyphens-auto px-2 lg:overflow-y-auto'>
                             {about.about}
                         </p>
                     </div>
-                    <div className='flex flex-col h-[40%]'>
-                        <header className='flex min-h-[50px] bg-[#8D4BB930] text-[#8D4BB9] px-5 items-center text-lg'>
+                    <div className='flex min-w-[300px] flex-col'>
+                        <header className='flex text-lg px-4 py-2 bg-[#8D4BB930] text-[#8D4BB9] min-h-[50px] items-center'>
                             Curiosidades
                         </header>
-                        <div className='grid grid-cols-5 gap-4 p-4'>
-                            {about.curiosities.map(curiosity => (
-                                <Curiosity 
-                                    key={curiosity.id} 
-                                    {...curiosity} 
-                                />
-                            ))}
+                        <div className='flex-col flex gap-y-4 py-2 lg:overflow-y-auto px-1'>
+                            {
+                                about.curiosities.map(curiosity => (
+                                    <Curiosity 
+                                        key={curiosity.id} 
+                                        {...curiosity} 
+                                    />
+                                ))
+                            }
                         </div>
                     </div>
                 </main>
