@@ -1,9 +1,9 @@
 import { createContext, useEffect, useMemo, useState } from 'react'
 import { EducationalExperienceType } from '../types/EducationalExperience.type'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 import Container from '../layout/Container'
 import Experience from '../components/Educational/Experience'
 import educationalData from '../data/educational.json'
-import { ChevronDown, ChevronUp } from 'lucide-react'
 
 type EducationalContextType = {
   selectedExperience: EducationalExperienceType | null;

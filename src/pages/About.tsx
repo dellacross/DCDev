@@ -1,10 +1,10 @@
+import { AtSign, Github, Instagram, Linkedin } from 'lucide-react'
 import { calculateAge } from '../utils/calculateAge'
 import { useMemo } from 'react'
 import Photo from '../assets/images/photo.png'
 import Container from '../layout/Container'
 import about from '../data/about.json'
 import Curiosity from '../components/About/Curiosity'
-import { AtSign, Github, Instagram, Linkedin } from 'lucide-react'
 
 const About = () => {
 

@@ -3,6 +3,7 @@ export type EducationalExperienceType = {
     name: string;
     description: string;
     institution: string;
+    institutionUrl: string;
     acronym: string;
     duration: string | null;
     link?: string | null;
