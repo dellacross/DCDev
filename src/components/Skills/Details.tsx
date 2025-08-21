@@ -2,6 +2,7 @@ import { Building2, Clock, Link } from 'lucide-react'
 import { SkillsContext } from '../../pages/Skills'
 import { useContext } from 'react'
 import { DETAILSTAB } from '../../constants/SkillsTab.constant'
+import HighlightedLabel from '../HighlightedLabel'
 
 const Details = () => {
 
@@ -12,7 +13,7 @@ const Details = () => {
 
   return (
     <div className={`${tab === DETAILSTAB ? 'flex' : 'lg:hidden'} flex-col gap-y-4 text-sm lg:h-full py-2 lg:overflow-y-auto`}>
-      <div className='lg:hidden flex text-lg px-4 py-2 bg-[#29903B30] text-[#29903B] sm:mx-2 min-h-[40px]'>Detalhes</div>
+      <HighlightedLabel label='Detalhes' color='#29903B' extraclass='lg:hidden sm:mx-2' />
       <p className='text-lg hyphens-auto md:mx-2 mx-4 max-sm:text-md'>{selectedCourse?.name}</p>
       <div className='flex gap-x-4 text-xs text-gray-400 px-2 max-sm:flex-col max-sm:gap-y-4'>
         <p className='flex items-center rounded-md text-white bg-[#262626]'>

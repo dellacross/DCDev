@@ -1,9 +1,9 @@
 import { createContext, useEffect, useMemo, useState } from 'react'
 import { ProfessionalExperienceType } from '../types/ProfessionalExperience.type'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 import Container from '../layout/Container'
 import Experience from '../components/Career/Experience'
 import professionalExperiences from '../data/professionalExperiences.json'
-import { ChevronDown, ChevronUp } from 'lucide-react'
 
 type ProfessionalExperienceContextType = {
     selectedExperience: ProfessionalExperienceType | null

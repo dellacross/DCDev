@@ -5,6 +5,7 @@ import Photo from '../assets/images/photo.png'
 import Container from '../layout/Container'
 import about from '../data/about.json'
 import Curiosity from '../components/About/Curiosity'
+import HighlightedLabel from '../components/HighlightedLabel'
 
 const About = () => {
 
@@ -70,15 +71,13 @@ const About = () => {
                 </aside>
                 <main className='flex-1 h-full flex w-[calc(100% - 300px)] max-md:flex-col gap-y-4'>
                     <div className='flex flex-col gap-y-2 px-2'>
-                        <div className='flex text-lg px-4 py-2 bg-[#8D4BB930] text-[#8D4BB9] min-h-[50px] items-center'>Olá, meu nome é {about.name}!</div>
+                        <HighlightedLabel label={`Olá, meu nome é ${about.name}!`} color='#8D4BB9' />
                         <p className='text-white text-sm whitespace-pre-line hyphens-auto px-2 lg:overflow-y-auto'>
                             {about.about}
                         </p>
                     </div>
                     <div className='flex min-w-[300px] flex-col'>
-                        <header className='flex text-lg px-4 py-2 bg-[#8D4BB930] text-[#8D4BB9] min-h-[50px] items-center'>
-                            Curiosidades
-                        </header>
+                        <HighlightedLabel label='Curiosidades' color='#8D4BB9' />
                         <div className='flex-col flex gap-y-4 py-2 lg:overflow-y-auto px-1'>
                             {
                                 about.curiosities.map(curiosity => (

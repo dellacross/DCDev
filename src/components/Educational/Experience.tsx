@@ -1,6 +1,7 @@
 import { Building2, Calendar, GraduationCap, Link, Lock } from "lucide-react"
 import { EducationalContext } from "../../pages/Educational"
 import { useContext } from "react"
+import HighlightedLabel from "../HighlightedLabel"
 
 const Experience = () => {
 
@@ -47,9 +48,7 @@ const Experience = () => {
           <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Sobre o curso</span>
         </a>
       </div>
-      <div className='flex min-h-[40px] items-center text-lg mb-2'>
-        <span className='bg-[#C9163430] text-[#C91634] px-5 py-1'>Minha trajetória no curso</span>
-      </div>
+      <HighlightedLabel label='Minha trajetória no curso' color='#C91634' />
       <div className='text-white text-sm lg:overflow-auto px-2 whitespace-pre-line hyphens-auto py-2'>{selectedExperience?.description}</div>
     </main>
   )
