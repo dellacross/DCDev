@@ -48,17 +48,17 @@ const Projects = () => {
                     setTab
                 }}
             >
-                <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] md:flex-row flex-col max-md:overflow-y-auto'>
+                <div className='h-full flex xl:gap-x-[50px] lg:gap-x-[30px] md:gap-x-[15px] lg:flex-row flex-col max-lg:overflow-y-auto'>
                     <aside className='h-full xl:w-[300px] md:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
-                        <p className='text-white mx-[10px] md:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
+                        <p className='text-white mx-[10px] lg:flex hidden bg-[#262626] w-max px-4 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522]'>Projetos</p>
                         <button
                             onClick={() => setOpenProjectList(!openProjectList)}
-                            className='md:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522] gap-2'
+                            className='lg:hidden flex text-white mx-[10px] flex bg-[#262626] w-max px-2 py-[2px] border-b border-[#DEA522] border-solid text-[#DEA522] gap-2'
                         >
                             { openProjectList ? <ChevronUp /> : <ChevronDown /> }
                             Projetos
                         </button>
-                        <div className='md:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
+                        <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
                             {
                                 projects?.map((project, index) => (
                                     <p 
@@ -72,7 +72,7 @@ const Projects = () => {
                                 ))
                             }
                         </div>
-                        <div className={`${openProjectList ? 'flex' : 'hidden'} md:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1`}>
+                        <div className={`${openProjectList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1`}>
                             {
                                 projects?.map((project, index) => (
                                     <p 
