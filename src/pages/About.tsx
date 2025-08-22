@@ -6,7 +6,6 @@ import Photo from '../assets/images/photo.png'
 import Container from '../layout/Container'
 import Curiosity from '../components/About/Curiosity'
 import TextContainer from '../components/TextContainer'
-import HighlightedLabel from '../components/HighlightedLabel'
 
 const About = () => {
 
@@ -72,11 +71,15 @@ const About = () => {
                 </aside>
                 <main className='flex flex-1 h-full w-[calc(100% - 300px)] gap-y-4 max-md:flex-col '>
                     <div className='flex flex-col gap-y-2 px-2'>
-                        <HighlightedLabel label={`Olá, meu nome é ${about.name}!`} color='#8D4BB9' />
+                        <div className={`flex text-lg px-4 py-2 bg-[#8D4BB930] text-[#8D4BB9] min-h-[50px] items-center`}>
+                            {`Olá, meu nome é ${about.name}!`}
+                        </div>
                         <TextContainer content={about.about} />
                     </div>
                     <div className='flex flex-col min-w-[300px]'>
-                        <HighlightedLabel label='Curiosidades' color='#8D4BB9' />
+                        <div className={`flex text-lg px-4 py-2 bg-[#8D4BB930] text-[#8D4BB9] min-h-[50px] items-center`}>
+                            Curiosidades
+                        </div>
                         <div className='flex flex-col gap-y-4 py-2 px-1 lg:overflow-y-auto'>
                             {
                                 about.curiosities.map(curiosity => (

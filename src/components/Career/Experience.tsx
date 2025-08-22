@@ -1,7 +1,6 @@
 import { ProfessionalExperienceContext } from "../../pages/Career"
 import { Building2, Clock, Computer } from "lucide-react"
 import { useContext } from "react"
-import HighlightedLabel from "../HighlightedLabel"
 import TextContainer from "../TextContainer"
 
 const Experience = () => {
@@ -25,7 +24,9 @@ const Experience = () => {
           <span className='px-2 bg-[#191919] h-[30px] rounded-r-md flex items-center text-sm'>{selectedExperience?.location}</span>
         </p>
       </div>
-      <HighlightedLabel label='Minha experiência' color='#086099' />
+      <div className={`flex text-lg px-4 py-2 bg-[#08609930] text-[#086099] min-h-[50px] items-center`}>
+        Minha experiência
+      </div>
       <TextContainer content={selectedExperience?.description} />
     </main>
   )

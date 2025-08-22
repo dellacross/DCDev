@@ -3,7 +3,6 @@ import { ProjectContext } from '../../pages/Projects'
 import { useContext } from 'react'
 import { SkillType } from '../../types/Skill.type'
 import Tech from '../Tech'
-import HighlightedLabel from '../HighlightedLabel'
 
 const Technologies = () => {
 
@@ -14,7 +13,9 @@ const Technologies = () => {
 
     return (
         <div className={`${tab === TECHNOLOGIESTAB ? 'lg:grid' : 'lg:hidden'} flex flex-col xl:grid-cols-5 lg:grid-cols-3 gap-4 text-sm text-white md:p-2 lg:p-0 lg:overflow-y-auto`}>
-            <HighlightedLabel label='Tecnologias' color='#DEA522' extraclass='lg:hidden sm:mx-2' />
+            <div className={`flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] min-h-[50px] items-center $lg:hidden sm:mx-2`}>
+                Tecnologias
+            </div>
             {
                 selectedProject?.skills?.map((tech: SkillType, index: number) => (
                     <Tech 

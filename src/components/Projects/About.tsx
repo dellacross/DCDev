@@ -2,7 +2,6 @@ import { ProjectContext } from '../../pages/Projects'
 import { useContext } from 'react'
 import { ABOUTTAB } from '../../constants/ProjectTab.constant'
 import { Link } from 'lucide-react'
-import HighlightedLabel from '../HighlightedLabel'
 import TextContainer from '../TextContainer'
 
 const About = () => {
@@ -14,7 +13,9 @@ const About = () => {
 
     return (
         <div className={`${tab === ABOUTTAB ? 'flex' : 'lg:hidden'} flex-col gap-y-4 text-sm lg:h-full py-2 lg:overflow-y-auto`}>
-            <HighlightedLabel label='Sobre o projeto' color='#DEA522' extraclass='lg:hidden sm:mx-2'/>
+            <div className={`flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] min-h-[50px] items-center $lg:hidden sm:mx-2`}>
+                Sobre o projeto
+            </div>
             <div className='flex gap-x-1'>
                 {
                     selectedProject?.repositoryLink &&
