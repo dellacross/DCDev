@@ -1,6 +1,5 @@
 import { createContext, useEffect, useMemo, useState } from 'react'
 import { ProfessionalExperienceType } from '../types/ProfessionalExperience.type'
-import ListItem from '../components/ListItem'
 import NavLabel from '../components/NavLabel'
 import Container from '../layout/Container'
 import Experience from '../components/Career/Experience'
@@ -48,30 +47,30 @@ const Career = () => {
                         <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2'>
                             {
                                 ProfessionalExperiencesList?.map(experience => (
-                                    <ListItem 
+                                    <div 
                                         key={experience.id}
-                                        currentState={selectedExperience}
-                                        state={experience}
-                                        setter={setSelectedExperience}
-                                        color='#086099'
-                                        title={experience.title}
-                                        subtitles={[experience.company, experience.duration]}
-                                    />
+                                        className={`flex flex-col gap-y-1 px-4 py-2 border-box bg-[#262626] text-white cursor-pointer border-solid border-b hover:bg-[#333333] hover:border-[#086099] ${selectedExperience?.id === experience.id ? 'bg-[#333333] border-[#086099]' : 'border-transparent'}`} 
+                                        onClick={() => setSelectedExperience(experience)}
+                                    >
+                                        <p className=''>{experience.title}</p>
+                                        <p className='text-xs'>{experience.company}</p>
+                                        <p className='text-xs'>{experience.duration}</p>
+                                    </div>
                                 ))
                             }
                         </div>
                         <div className={`${openExperienceList ? 'flex' : 'hidden'} lg:hidden flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>
                             {
                                 ProfessionalExperiencesList?.map(experience => (
-                                    <ListItem 
-                                        key={experience.id}
-                                        currentState={selectedExperience}
-                                        state={experience}
-                                        setter={toggleExperience}
-                                        color='#086099'
-                                        title={experience.title}
-                                        subtitles={[experience.company, experience.duration]}
-                                    />
+                                <div 
+                                    key={experience.id}
+                                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#086099]' : 'border-transparent'}`}
+                                    onClick={() => toggleExperience(experience)}
+                                >
+                                    <p className=''>{experience.title}</p>
+                                    <p className='text-xs'>{experience.company}</p>
+                                    <p className='text-xs'>{experience.duration}</p>
+                                </div>
                                 ))
                             }
                         </div>

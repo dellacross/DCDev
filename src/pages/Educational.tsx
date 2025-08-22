@@ -5,7 +5,6 @@ import Container from '../layout/Container'
 import Experience from '../components/Educational/Experience'
 import ListButton from '../components/ListButton'
 import educationalData from '../data/educational.json'
-import ListItem from '../components/ListItem'
 
 type EducationalContextType = {
   selectedExperience: EducationalExperienceType | null;
@@ -48,30 +47,30 @@ const Educational = () => {
             <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2'>
               {
                 EducationalExperiences?.map(experience => (
-                  <ListItem 
+                  <div 
                     key={experience.id}
-                    currentState={selectedExperience}
-                    state={experience}
-                    setter={setSelectedExperience}
-                    color='#C91634'
-                    title={experience.name}
-                    subtitles={[experience.institution, experience.duration]}
-                  />
+                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
+                    onClick={() => setSelectedExperience(experience)}
+                  >
+                    <p className=''>{experience.name}</p>
+                    <p className='text-xs'>{experience.institution}</p>
+                    { experience.duration && <p className='text-xs'>{experience.duration}</p> }
+                  </div>
                 ))
               }
             </div>
             <div className={`${openExperienceList ? 'flex' : 'hidden'} lg:hidden flex flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>
               {
                 EducationalExperiences?.map(experience => (
-                  <ListItem 
+                  <div 
                     key={experience.id}
-                    currentState={selectedExperience}
-                    state={experience}
-                    setter={toggleExperience}
-                    color='#C91634'
-                    title={experience.name}
-                    subtitles={[experience.institution, experience.duration]}
-                  />
+                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
+                    onClick={() => toggleExperience(experience)}
+                  >
+                    <p className=''>{experience.name}</p>
+                    <p className='text-xs'>{experience.institution}</p>
+                    { experience.duration && <p className='text-xs'>{experience.duration}</p> }
+                  </div>
                 ))
               }
             </div>

@@ -4,10 +4,8 @@ import { SkillsTabType } from '../types/SkillsTab.type';
 import { CourseType } from '../types/Course.type';
 import Course from '../components/Skills/Course';
 import courses from '../data/courses.json';
-import ListItem from '../components/ListItem';
 import NavLabel from '../components/NavLabel';
 import Container from '../layout/Container';
-import SubnavItem from '../components/SubnavItem';
 import ListButton from '../components/ListButton';
 
 type SkillsContextType = {
@@ -53,49 +51,46 @@ const Skills = () => {
                         <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
                             {
                                 CoursesList.map(course => (
-                                    <ListItem 
+                                    <div 
                                         key={course.id}
-                                        currentState={selectedCourse}
-                                        state={course}
-                                        setter={setSelectedCourse}
-                                        color='#29903B'
-                                        title={course.name}
-                                        subtitles={[course.institution]}
-                                    />
+                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
+                                        onClick={() => setSelectedCourse(course)}
+                                    >
+                                        <p className=''>{course.name}</p>
+                                        <p className='text-xs'>{course.institution}</p>
+                                    </div>
                                 ))
                             }
                         </div>
-                        <div className={`${openSkillList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>{
+                        <div className={`${openSkillList ? 'flex' : 'hidden'} lg:hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2`}>
+                            {
                                 CoursesList.map(course => (
-                                    <ListItem 
+                                    <div 
                                         key={course.id}
-                                        currentState={selectedCourse}
-                                        state={course}
-                                        setter={toggleCourse}
-                                        color='#29903B'
-                                        title={course.name}
-                                        subtitles={[course.institution]}
-                                    />
+                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
+                                        onClick={() => toggleCourse(course)}
+                                    >
+                                        <p className=''>{course.name}</p>
+                                        <p className='text-xs'>{course.institution}</p>
+                                    </div>
                                 ))
                             }
                         </div>
                     </aside>
                     <main className='flex-1 h-full flex w-full flex-col'>
                         <header className='h-[30px] text-white border-b border-[#222222] lg:flex hidden items-center'>
-                            <SubnavItem 
-                                currentState={tab}
-                                state={DETAILSTAB}
-                                setter={setTab}
-                                color="#29903B"
-                                label="Detalhes"
-                            />
-                            <SubnavItem 
-                                currentState={tab}
-                                state={TECHNOLOGIESTAB}
-                                setter={setTab}
-                                color="#29903B"
-                                label="Tecnologias"
-                            />
+                            <button 
+                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-b ${tab === DETAILSTAB ? 'border-[#29903B]' : 'border-transparent'}`}
+                                onClick={() => setTab(DETAILSTAB)}
+                            >
+                                Detalhes
+                            </button>
+                            <button 
+                                className={`h-[30px] text-white px-4 py-2 flex items-center align-center hover:bg-[#262626] hover:border-b border-b ${tab === TECHNOLOGIESTAB ? 'border-[#29903B]' : 'border-transparent'}`}
+                                onClick={() => setTab(TECHNOLOGIESTAB)}
+                            >
+                                Tecnologias
+                            </button>
                         </header>
                         <Course />
                     </main>
