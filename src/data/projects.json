@@ -17,7 +17,8 @@
       { "id": "2", "name": "Virgílio Borges", "email": "virgilio@example.com", "roles": ["Back-end dev"] }
     ],
     "repositoryLink": null,
-    "url": "https://restrito-beta.cotemig.com.br/"
+    "url": "https://restrito-beta.cotemig.com.br/",
+    "demo": null
   },
   {
     "id":"2",
@@ -41,7 +42,8 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ],
     "repositoryLink": null,
-    "url": null
+    "url": null,
+    "demo": null
   },
   {
     "id":"3",
@@ -65,7 +67,8 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ],
     "repositoryLink": "https://github.com/dellacross/DepositTracker",
-    "url": null
+    "url": null,
+    "demo": null
   },
   {
     "id":"4",
@@ -83,7 +86,8 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Full stack dev"] }
     ],
     "repositoryLink": "https://github.com/dellacross/DCDev",
-    "url": "https://dcdev-portfolio.netlify.app/"
+    "url": "https://dcdev-portfolio.netlify.app/",
+    "demo": null
   },
   {
     "id":"5",
@@ -101,7 +105,8 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Back-end dev"] }
     ],
     "repositoryLink": "https://github.com/dellacross/SujeitoPizza",
-    "url": null
+    "url": null,
+    "demo": null
   },
   {
     "id":"6",
@@ -114,7 +119,8 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
     ],
     "repositoryLink": "https://github.com/dellacross/Redes-TP1",
-    "url": null
+    "url": null,
+    "demo": null
   },
   {
     "id":"7",
@@ -127,7 +133,8 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
     ],
     "repositoryLink": "https://github.com/dellacross/Redes-TP2",
-    "url": null
+    "url": null,
+    "demo": null
   },
   {
     "id":"8",
@@ -144,6 +151,14 @@
       { "id": "1", "name": "Victor Della", "email": "victor@example.com", "roles": ["Dev"] }
     ],
     "repositoryLink": "https://colab.research.google.com/drive/1EhB1js637VId0vGQj5uq7czNnjj5Eyt_#scrollTo=J-t_zENLXCfn",
-    "url": null
+    "url": null,
+    "demo": {
+        "title": "Vídeo de apresentação",
+        "name": "Análise e Simulação da Mega-Sena",
+        "link": "https://www.youtube.com/embed/QhBnZ6NPOY0",
+        "image": null,
+        "video": null,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nec augue eu efficitur. Proin sit amet laoreet nunc. Vestibulum sagittis magna vitae augue sodales blandit. Pellentesque tempus dignissim euismod. Sed neque quam, venenatis non iaculis eget, ultrices sed quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus at ornare nunc. Vestibulum in mauris id felis consectetur viverra nec eget elit. Nulla congue dapibus ligula facilisis mattis. Vestibulum eleifend et arcu nec sagittis. Nulla mattis quam quis augue accumsan lacinia. Aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nec augue eu efficitur. Proin sit amet laoreet nunc. Vestibulum sagittis magna vitae augue sodales blandit. Pellentesque tempus dignissim euismod. Sed neque quam, venenatis non iaculis eget, ultrices sed quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus at ornare nunc. Vestibulum in mauris id felis consectetur viverra nec eget elit. Nulla congue dapibus ligula facilisis mattis. Vestibulum eleifend et arcu nec sagittis. Nulla mattis quam quis augue accumsan lacinia. Aliquam erat volutpat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nec augue eu efficitur. Proin sit amet laoreet nunc. Vestibulum sagittis magna vitae augue sodales blandit. Pellentesque tempus dignissim euismod. Sed neque quam, venenatis non iaculis eget, ultrices sed quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus at ornare nunc. Vestibulum in mauris id felis consectetur viverra nec eget elit. Nulla congue dapibus ligula facilisis mattis. Vestibulum eleifend et arcu nec sagittis. Nulla mattis quam quis augue accumsan lacinia. Aliquam erat volutpat."
+    }
   }
 ]

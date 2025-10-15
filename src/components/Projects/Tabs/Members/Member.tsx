@@ -1,5 +1,5 @@
-import { User } from "lucide-react"
-import { MemberType } from "../../types/Member.type"
+import { MemberType } from '../../../../types/Member.type'
+import { User } from 'lucide-react'
 
 const Member = ({ name, email, roles, image }: MemberType) => {
   return (

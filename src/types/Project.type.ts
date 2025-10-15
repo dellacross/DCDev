@@ -1,3 +1,4 @@
+import { DemoType } from "./DemoType.type";
 import { SkillType } from "./Skill.type";
 
 export type ProjectType = {
@@ -5,4 +6,5 @@ export type ProjectType = {
     name: string;
     description: string;
     skills: SkillType[];
+    demo: DemoType | null;
 }

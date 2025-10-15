@@ -1,6 +1,7 @@
-import About from './About'
-import Members from './Members'
-import Technologies from './Technologies'
+import Demo from './Tabs/Demo'
+import About from './Tabs/About'
+import Members from './Tabs/Members'
+import Technologies from './Tabs/Technologies'
 
 const Project = () => {
 
@@ -9,6 +10,7 @@ const Project = () => {
       <About />
       <Technologies />
       <Members />
+      <Demo />
     </div>
   )
 }

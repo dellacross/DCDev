@@ -1,8 +1,8 @@
-import { TECHNOLOGIESTAB } from '../../constants/ProjectTab.constant'
-import { ProjectContext } from '../../pages/Projects'
+import { TECHNOLOGIESTAB } from '../../../constants/ProjectTab.constant'
+import { ProjectContext } from '../../../pages/Projects'
 import { useContext } from 'react'
-import { SkillType } from '../../types/Skill.type'
-import Tech from '../Tech'
+import { SkillType } from '../../../types/Skill.type'
+import Tech from '../../Tech'
 
 const Technologies = () => {
 

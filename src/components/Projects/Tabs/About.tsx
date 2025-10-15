@@ -1,8 +1,8 @@
-import { ProjectContext } from '../../pages/Projects'
+import { ProjectContext } from '../../../pages/Projects'
 import { useContext } from 'react'
-import { ABOUTTAB } from '../../constants/ProjectTab.constant'
+import { ABOUTTAB } from '../../../constants/ProjectTab.constant'
 import { Link } from 'lucide-react'
-import TextContainer from '../TextContainer'
+import TextContainer from '../../TextContainer'
 
 const About = () => {
 

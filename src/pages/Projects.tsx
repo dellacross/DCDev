@@ -1,5 +1,5 @@
 import { useMemo, useState, createContext, useEffect } from 'react'
-import { ABOUTTAB, MEMBERSTAB, TECHNOLOGIESTAB } from '../constants/ProjectTab.constant'
+import { ABOUTTAB, DEMOTAB, MEMBERSTAB, TECHNOLOGIESTAB } from '../constants/ProjectTab.constant'
 import type { ProjectType } from '../types/Project.type'
 import { ProjectTabType } from '../types/ProjectTab.type'
 import { Code } from 'lucide-react'
@@ -102,6 +102,12 @@ const Projects = () => {
                                 onClick={() => setTab(MEMBERSTAB)}
                             >
                                 Equipe
+                            </button>
+                            <button 
+                                className={`h-[30px] text-white px-4 py-2 ${selectedProject?.demo ? 'hidden' : 'hidden'} items-center align-center hover:bg-[#262626] hover:border-b border-[#DEA522] border-b ${tab === DEMOTAB ? 'border-[#DEA522]' : 'border-transparent'}`}
+                                onClick={() => setTab(DEMOTAB)}
+                            >
+                                Demo
                             </button>
                         </header>
                         <Project />

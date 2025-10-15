@@ -1,8 +1,8 @@
-import { ProjectContext } from '../../pages/Projects'
+import { ProjectContext } from '../../../pages/Projects'
 import { useContext } from 'react'
-import { MemberType } from '../../types/Member.type'
-import { MEMBERSTAB } from '../../constants/ProjectTab.constant'
-import Member from './Member'
+import { MemberType } from '../../../types/Member.type'
+import { MEMBERSTAB } from '../../../constants/ProjectTab.constant'
+import Member from './Members/Member'
 
 const Members = () => {
 
