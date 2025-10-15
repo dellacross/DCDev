@@ -47,15 +47,18 @@ const Experience = () => {
           <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><Link size={16} /></span>
           <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Sobre o curso</span>
         </a>
-        <a
-          className='flex items-center rounded-md text-white bg-[#262626] col-span-1 min-h-[30px]'
-          href={selectedExperience?.certificate || '#'}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><ShieldCheck size={16} /></span>
-          <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Certificado</span>
-        </a>
+        {
+          selectedExperience?.certificate &&
+          <a
+            className='flex items-center rounded-md text-white bg-[#262626] col-span-1 min-h-[30px]'
+            href={selectedExperience?.certificate || '#'}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <span className='bg-[#C91634] flex items-center justify-center h-full w-[30px] rounded-l-md'><ShieldCheck size={16} /></span>
+            <span className='px-2 bg-[#191919] h-full rounded-r-md flex items-center text-sm flex-1'>Diploma</span>
+          </a>
+        }
       </div>
       <div className={`flex text-lg px-4 py-2 bg-[#C9163430] text-[#C91634] min-h-[50px] items-center`}>
         Minha trajetória no curso
