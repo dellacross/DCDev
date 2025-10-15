@@ -1,5 +1,6 @@
-import { AtSign, Github, Instagram, Linkedin } from 'lucide-react'
+import { AtSign, Download, Github, Instagram, Linkedin } from 'lucide-react'
 import { calculateAge } from '../utils/calculateAge'
+import { DRIVE_CV_URL } from '../constants/drive_CV.constant'
 import { useMemo } from 'react'
 import about from '../data/about.json'
 import Photo from '../assets/images/photo.png'
@@ -68,6 +69,15 @@ const About = () => {
                             {<Instagram color='#fff' />}
                         </a>
                     </div>
+                    <a
+                        href={DRIVE_CV_URL}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='my-4 mx-auto text-lg shadow-md bg-[#775390] hover:bg-[#8D4BB9] transition-all text-white rounded-md px-4 py-2 cursor-pointer gap-2 flex items-center duration-300'
+                    >
+                        <Download />
+                        <p>Download CV</p>
+                    </a>
                 </aside>
                 <main className='flex flex-1 h-full w-[calc(100% - 300px)] gap-y-4 max-md:flex-col '>
                     <div className='flex flex-col gap-y-2 px-2'>

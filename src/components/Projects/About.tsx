@@ -12,8 +12,8 @@ const About = () => {
     } = useContext(ProjectContext)
 
     return (
-        <div className={`${tab === ABOUTTAB ? 'flex' : 'lg:hidden'} flex-col gap-y-4 text-sm lg:h-full py-2 lg:overflow-y-auto`}>
-            <div className={`flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] min-h-[50px] items-center $lg:hidden sm:mx-2`}>
+        <div className={`${tab === ABOUTTAB ? 'flex' : 'lg:hidden'} flex-col gap-4 text-sm text-white px-2 pt-2 pb-4 lg:overflow-y-auto`}>
+            <div className={`flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] min-h-[50px] items-center $lg:hidden sm:mx-2 w-max`}>
                 Sobre o projeto
             </div>
             <div className='flex gap-x-1'>

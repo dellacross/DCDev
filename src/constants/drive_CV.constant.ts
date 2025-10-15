@@ -1,0 +1,1 @@
+export const DRIVE_CV_URL = 'https://drive.google.com/drive/u/0/folders/1GLNuHUa5mNxuew29f-AvDy4cozlIv5zH';

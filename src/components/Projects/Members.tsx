@@ -12,8 +12,8 @@ const Members = () => {
     } = useContext(ProjectContext)
 
     return (
-        <div className={`${tab === MEMBERSTAB ? 'lg:grid' : 'lg:hidden'} flex flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:p-4 lg:h-full lg:overflow-y-auto`}>
-            <div className={`flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] min-h-[50px] items-center $lg:hidden sm:mx-2`}>
+        <div className={`${tab === MEMBERSTAB ? 'flex' : 'hidden'} flex-col gap-4 text-sm text-white px-2 pt-2 pb-4 lg:overflow-y-auto`}>
+            <div className={`flex text-lg px-4 py-2 bg-[#DEA52230] text-[#DEA522] min-h-[50px] items-center $lg:hidden sm:mx-2 w-max`}>
                 Equipe
             </div>
             {

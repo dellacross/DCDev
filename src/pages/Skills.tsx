@@ -48,12 +48,12 @@ const Skills = () => {
                     <aside className='lg:h-full xl:w-[300px] lg:w-[200px] w-full flex gap-y-4 flex-col border-l-[2px] border-white border-solid'>
                         <NavLabel label='Cursos' color='#29903B' />
                         <ListButton color='#29903B' label='Cursos' state={openSkillList} setter={setOpenSkillList} />
-                        <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1'>
+                        <div className='lg:flex hidden flex-col overflow-y-auto h-full overflow-x-hidden gap-y-1 px-2'>
                             {
                                 CoursesList.map(course => (
                                     <div 
                                         key={course.id}
-                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
+                                        className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-solid hover:bg-[#333333] border-b ${selectedCourse?.id === course.id ? 'border-[#29903B]' : 'border-transparent'}`}
                                         onClick={() => setSelectedCourse(course)}
                                     >
                                         <p className=''>{course.name}</p>

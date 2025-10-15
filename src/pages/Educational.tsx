@@ -49,7 +49,7 @@ const Educational = () => {
                 EducationalExperiences?.map(experience => (
                   <div 
                     key={experience.id}
-                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
+                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
                     onClick={() => setSelectedExperience(experience)}
                   >
                     <p className=''>{experience.name}</p>
@@ -64,7 +64,7 @@ const Educational = () => {
                 EducationalExperiences?.map(experience => (
                   <div 
                     key={experience.id}
-                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] border-b ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
+                    className={`flex flex-col gap-y-1 px-4 py-2 bg-[#262626] text-white cursor-pointer border-b  border-solid hover:bg-[#333333] ${selectedExperience?.id === experience.id ? 'border-[#C91634]' : 'border-transparent'}`}
                     onClick={() => toggleExperience(experience)}
                   >
                     <p className=''>{experience.name}</p>

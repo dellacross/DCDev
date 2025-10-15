@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
-import Footer from '../components/Footer'
 
 const Home = ({ children }: { children: ReactNode }) => {
 
@@ -36,10 +35,9 @@ const Home = ({ children }: { children: ReactNode }) => {
       <Header />
       <Banner />
       <Navbar />
-      <main className='flex flex-col justify-center lg:h-[calc(100dvh-340px)] md:h-[calc(100dvh-320px)] sm:h-[calc(100dvh-250px)] h-[calc(100dvh-200px)] py-4 box-border'>
+      <main className='flex flex-col justify-center lg:h-[calc(100dvh-300px)] md:h-[calc(100dvh-300px)] sm:h-[calc(100dvh-190px)] h-[calc(100dvh-140px)] py-4 box-border'>
         { children }
       </main>
-      <Footer />
     </div>
   )
 }
