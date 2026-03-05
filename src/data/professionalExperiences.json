@@ -1,14 +1,22 @@
 [
     {
-        "id": "1",
-        "title": "Desenvolvedor Front End",
-        "company": "COTEMIG",
-        "location": "Presencial",
-        "duration": "Março/2025 - Atual",
-        "description": "Atuo no desenvolvimento e manutenção de um sistema web completo para uma instituição de ensino, voltado a diferentes perfis de usuários, incluindo alunos, ex-alunos, professores, responsáveis e equipe administrativa. Nesse contexto, sou responsável pela implementação de funcionalidades essenciais, como o lançamento de notas e frequência por professores, exibição de boletins virtuais, histórico escolar, grade curricular e disponibilização de interfaces para pagamento de mensalidades por alunos e responsáveis financeiros.\n\nDesenvolvi recursos voltados à gestão acadêmica e administrativa, como rematrícula online, cadastro para provas, formulação de planos de estudos, geração de declarações escolares, visualização de agenda, portal de notícias e blog institucional, com conteúdo segmentado para o público interno.\n\nAlém disso, contribuí na integração do sistema com plataformas externas, incluindo a EDUQO e o Google Classroom, garantindo uma experiência fluida entre os diferentes ambientes utilizados pela instituição. O desenvolvimento foi conduzido com foco em boas práticas de código, priorizando modularidade, reutilização de componentes e escalabilidade, de forma a facilitar testes e manutenções futuras.\n\nMinha atuação também envolveu a integração eficiente entre interfaces front-end e serviços de back-end por meio de APIs RESTful, em um ambiente colaborativo com equipes multifuncionais. Para versionamento e fluxo de trabalho em equipe, utilizei Git e GitHub, assegurando organização e rastreabilidade no desenvolvimento contínuo do projeto."
+        "id": "3",
+        "title": "Desenvolvedor Full-Stack",
+        "company": "Tarken",
+        "location": "Home Office",
+        "duration": "Novembro/2025 - atual",
+        "description": "Atuo no desenvolvimento de uma plataforma SaaS voltada à gestão e automação de processos financeiros no agronegócio, com foco em qualidade, segurança e escalabilidade. Trabalho na construção de interfaces modernas e reutilizáveis utilizando React e Vue.js, seguindo padrões de Design System e boas práticas de UX/UI. Também desenvolvo serviços, regras de negócio e APIs RESTful em Node.js, responsáveis pela comunicação e integração entre sistemas. \n\nAlém disso, atuo no desenvolvimento e modelagem do banco de dados, criando e mantendo estruturas eficientes para garantir integridade, performance e organização das informações. Participo ainda da identificação e correção de bugs, além de contribuir em code reviews, definição de padrões técnicos e melhoria contínua dos fluxos de desenvolvimento utilizando Git e GitHub."
     },
     {
         "id": "2",
+        "title": "Desenvolvedor Front End",
+        "company": "COTEMIG",
+        "location": "Presencial",
+        "duration": "Março/2025 - Novembro/2025",
+        "description": "Atuo no desenvolvimento e manutenção de um sistema web completo para uma instituição de ensino, voltado a diferentes perfis de usuários, incluindo alunos, ex-alunos, professores, responsáveis e equipe administrativa. Nesse contexto, sou responsável pela implementação de funcionalidades essenciais, como o lançamento de notas e frequência por professores, exibição de boletins virtuais, histórico escolar, grade curricular e disponibilização de interfaces para pagamento de mensalidades por alunos e responsáveis financeiros.\n\nDesenvolvi recursos voltados à gestão acadêmica e administrativa, como rematrícula online, cadastro para provas, formulação de planos de estudos, geração de declarações escolares, visualização de agenda, portal de notícias e blog institucional, com conteúdo segmentado para o público interno.\n\nAlém disso, contribuí na integração do sistema com plataformas externas, incluindo a EDUQO e o Google Classroom, garantindo uma experiência fluida entre os diferentes ambientes utilizados pela instituição. O desenvolvimento foi conduzido com foco em boas práticas de código, priorizando modularidade, reutilização de componentes e escalabilidade, de forma a facilitar testes e manutenções futuras.\n\nMinha atuação também envolveu a integração eficiente entre interfaces front-end e serviços de back-end por meio de APIs RESTful, em um ambiente colaborativo com equipes multifuncionais. Para versionamento e fluxo de trabalho em equipe, utilizei Git e GitHub, assegurando organização e rastreabilidade no desenvolvimento contínuo do projeto."
+    },
+    {
+        "id": "1",
         "title": "Estagiário em Desenvolvimento Front End",
         "company": "COTEMIG",
         "location": "Híbrido",
